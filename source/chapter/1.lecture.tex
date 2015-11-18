@@ -1,0 +1,71 @@
+%!TEX root = Funktionalanalysis - Vorlesung.tex
+\chapter{Gametheorie}
+\section{Introduction}
+In analysing game theoretical situations we distinguish between the judging
+\begin{itemize}
+	\item \begriff{prescriptive} - means containing an indication of approval or disapproval
+	\item \begriff{normative} - means relating to our model
+\end{itemize}
+
+or the kind of equilibrium
+
+\begin{tabular}{|l|l|r|}
+	\hline\hline  			& {\textbf{complete information}} & {\textbf{incomplete information}} \\                                                    \hline   \textbf{static games} & Nash-Equilibrium & Bayesian-Nash-Equilibrium\arrayrulewidth2pt \\                                               \cline{1-3}   \textbf{dynamic games} & Perfect Nash-Equilibrium & Perfect Bayesian-Nash-Equilibrium \\ \hline\hline\end{tabular}
+
+\subsection{Games in strategic form}
+A game in strategic form is completely characterized by $\{ N, S, u \}$ where
+	\begin{enumerate}
+		\item $N$ is the number of players and for player $n$ would that mean $n \in \{ 1, \dotsc, N \}$.
+		\item For each player we have a set of \textit{pure} strategies $S$.
+		\item For each player $n \in \{1, \dotsc, N \}$ we have an expected utility function $u : S \rightarrow \MdR$
+	\end{enumerate}
+
+For two players ($P1$ and $P2$) and two possible signals ($a$ and $b$) we could use the matrix form, where the $u_{i}(x, y)$ is the utility function for Player $i$ for signal $x$ for $P1$ and $y$ for $P2$ with $x, y \in \{ a, b\}$
+\begin{center}
+	\begin{tabular}{|c|c|c|}
+		\hline\hline  			$P1$ / $P2$ & \textbf{a} & \textbf{b} \\         		\cline{2-3}   					\textbf{a} & $( u_{1}(a, a) , u_{2}(a, a))$ & $(u_{1}(a, b), u_{2}(a, b))$	\arrayrulewidth2pt \\            	\cline{2-3}   					\textbf{b} & $( u_{1}(b, a), u_{2}(b, a))$ & $(u_{1}(b, b), u_{2}(b, b))$\\ \hline\hline	\end{tabular}	
+\end{center}
+
+We call a \begriff{set of strategies} in a game a complete plan of actions for each situation in the game.
+
+\begin{example}[Prisoner's Dilemma] \label{prisonersdilemma}
+Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge. They hope to get both sentenced to a year in prison on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity either to: betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent. The offer is:
+	\begin{itemize}
+		\item If A and B each betray the other, each of them serves 6 years in prison
+		\item If A betrays B but B remains silent, A will be set free and B will serve 9 years in prison (and vice versa)
+		\item If A and B both remain silent, both of them will only serve 1 year in prison (on the lesser charge)
+	\end{itemize}
+	
+\begin{center}
+	\begin{tabular}{|l|l|r|}
+		\hline\hline  			P1 / P2 & \textbf{defects} & \textbf{cooperates} \\         		\cline{1-3}   			\textbf{defects} & $(-6, -6)$ & $(0, -9)$ 	\arrayrulewidth2pt \\            	\cline{1-3}   			\textbf{cooperates} & $(-9, 0)$ & $(-1, -1)$ \\ \hline\hline	\end{tabular}	
+\end{center}
+
+
+	Other Interpretations for the Prisoner's Dilemma
+	\begin{itemize}
+		\item Collusion on prices
+		\item Investing in human capital vs. arming for a war
+		\item Buying a SUV vs. a smaller car
+	\end{itemize}
+\end{example}
+
+\begin{definition*}
+	A strategy $s_{i}''$ is strictly dominated if and only if there exists another strategy $s_{i}'$ such that
+	\[ u(s_{i}', s_{-i}) \geq u(s_{i}'', s_{-i}) \quad \forall s_{-i} \in S_{i} \]	
+	In the \hyperref[prisonersdilemma]{Prisoner's Dilemma} is $cooperate$ strictly dominated by $defect$. Simply the elimination of strictly dominated strategies leads to the prediction of $(defects, defects)$.
+\end{definition*}
+
+\begin{example}
+	Iterated elimination of strictly dominated strategies leads to
+	\begin{itemize}
+		\item for Player 2: $l$ strictly dominates $r$
+		\item after having eliminated $r;
+	\end{itemize}
+\end{example}
+
+
+
+\section{The Beauty-Contest}
+
+\newpage

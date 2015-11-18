@@ -1,0 +1,38 @@
+\documentclass[a4paper,twoside,DIV15,BCOR12mm]{scrbook}
+
+\usepackage{Analysis}
+
+%standard setup
+\author{Prof. Dr. Nora Szech}
+\publishers{Martin Belica}
+\title{Economics and Behaviour}
+\date{Wintersemester 2015}
+
+%latexki
+\author{Prof. Dr. Nora Szech}
+\semester{Wintersemester 2015}
+\scriptstate{work-in-progress}
+
+\makeindex
+
+\begin{document}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{Titlepage}
+\input{Preface}
+\tableofcontents
+
+\input{chapter/1.lecture}
+
+\appendix
+\input{Abbreviations}
+
+\newpage
+\renewcommand{\indexname}{Stichwortverzeichnis}
+\addcontentsline{toc}{section}{Stichwortverzeichnis}
+\printindex
+
+
+\end{document}
