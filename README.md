@@ -1,28 +1,8 @@
-Funktionalanalysis
+Economics and Behaviour
 ===========
-Dieses Skript zur Vorlesung "Funktionalanalysis" am KIT bei
-Herrn Prof. Dr. Lutz Weis (WS 2015/2016) wurde von Studenten erstellt, es ist somit 
-inoffiziell, in Bearbeitung und enthält sehr wahrscheinlich einige
-Fehler (Übertragungsfehler, Tippfehler oder
-Verständnisprobleme) - ich bitte deswegen um Verständniss.
+This script for the lecture 'Economics and Behaviour' by Prof. Dr. Szech at the KIT during winter course 2015/16 was created by students and is therefore unofficial. It contains most likely mistakes (typos, copy errors or comprehension problems) since it is a work in progress - I call on your understanding.
 
-Verbesserungsvorschläge (auch wenn es nur einzelne Textsetzungsprobleme oder
-Rechtschreibfehler sind) bitte immer direkt melden oder verbessern!
-**Erst durch eure Mitarbeit, kann hieraus ein gutes Skript entstehen.**
+Please submit all improvement suggestions either via email or push them directly into the script on Github
+**With your help we can create a good script.**
 
-Den Verbesserungsvorschlag kann man
-* entweder direkt selbst umsetzen und einen pull request machen oder
-* mir per Email (ProxiStyx@hmamail.com) schicken.
-
-Ich werde dann versuchen sowohl die Vorlesung, als auch eure Verbesserungsvorschläge zeitnah einzuarbeiten.
-
-Zeichnungen
-===========
-Das erstellen der Zeichnungen ist sehr zeitaufwendig. Das ist der
-Grund, warum diese manchmal im Dokument vorerst ausgelassen sind.
-
-Ihr könnt mir gerne Zeichnungen schicken (entweder schön auf Papier
-Zeichnen und abfotographieren / einscannen oder schon mit Inscape /
-Gimp / ... oder sogar mit TikZ erstellen).
-
-Akzeptable Formate sind: .jpg, .pdf, .svg, .png, .gif, .tex, .sketch
+I'm going to try to implement all notes and suggestions as soon as possible.
