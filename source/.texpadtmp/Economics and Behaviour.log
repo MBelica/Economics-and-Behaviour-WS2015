@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.10.5)  18 NOV 2015 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.10.5)  19 NOV 2015 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -939,7 +939,7 @@ Normal \count register pool exhausted, switching to extended pool.
 
 
 Writing index file "Economics and Behaviour".idx
-(/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015-Economics-and-Behaviour/source/.texpadtmp/Economics and Behaviour.aux)
+(/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.aux)
 \openout1 = `"Economics and Behaviour.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -968,7 +968,7 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
- (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015-Economics-and-Behaviour/source/.texpadtmp/Economics and Behaviour.out) (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015-Economics-and-Behaviour/source/.texpadtmp/Economics and Behaviour.out)
+ (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.out) (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.out)
 \@outlinefile=\write6
 \openout6 = `"Economics and Behaviour.out"'.
 
@@ -1035,7 +1035,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
  [2
 
-] (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015-Economics-and-Behaviour/source/.texpadtmp/Economics and Behaviour.toc)
+] (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.toc)
 \tf@toc=\write7
 \openout7 = `"Economics and Behaviour.toc"'.
 
@@ -1068,91 +1068,72 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 21.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 43.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 47.
 [4
 
 ]
+Package hyperref Info: bookmark level for unknown plaindefinition defaults to 0 on input line 87.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 101.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 101.
+ [5]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 123.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 123.
+ [6]) (./chapter/2.lecture.tex
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
-./chapter/1.lecture.tex:82: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.82 	\end{itemize}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./chapter/1.lecture.tex:82: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.82 	\end{itemize}
-                   
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./chapter/1.lecture.tex:82: Missing $ inserted.
-<inserted text> 
-                $
-l.82 	\end{itemize}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+ []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 46.
+[7]) (./chapter/3.lecture.tex
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 89.
-[5]) (./Abbreviations.tex
+(babel)             in language  on input line 20.
+ [8]) (./Abbreviations.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
- [6
+(babel)             in language  on input line 34.
+ [9
 
 ]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 34.
+(hyperref)                be the same. Added a new anchor on input line 36.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 36.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 34.
-(/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015-Economics-and-Behaviour/source/.texpadtmp/Economics and Behaviour.ind
+(babel)             in language  on input line 36.
+(/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.ind
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 13.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 13.
- [7
+(babel)             in language  on input line 15.
+ [10
 
 
 
@@ -1161,22 +1142,22 @@ Package babel Info: Redefining ngerman shorthand "~
 \tf@thm=\write8
 \openout8 = `"Economics and Behaviour.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
- (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015-Economics-and-Behaviour/source/.texpadtmp/Economics and Behaviour.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+ (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 Package rerunfilecheck Info: File `"Economics and Behaviour".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 19799 strings out of 493090
- 319250 string characters out of 6134868
- 509263 words of memory out of 5000000
- 22908 multiletter control sequences out of 15000+600000
- 23061 words of font info for 77 fonts, out of 8000000 for 9000
+ 19838 strings out of 493090
+ 319524 string characters out of 6134868
+ 510359 words of memory out of 5000000
+ 22937 multiletter control sequences out of 15000+600000
+ 24591 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,8n,57p,609b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,9n,57p,609b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015-Economics-and-Behaviour/source/.texpadtmp/Economics and Behaviour.dvi" (7 pages, 26096 bytes).
+Output written on "/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (10 pages, 37060 bytes).
