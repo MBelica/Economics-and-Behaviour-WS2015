@@ -4,7 +4,7 @@ We started with the Dictator-Game, Christoph Engel wrote an interesting book to 
 
 \begin{example}[Ultimatum-Game]	
 The Ultimatum-Game is a dynamic game under complete information. \\
-We look at two players in two stages. The first player (the proposer (P)) receives a sum of money $(!0)$ and proposes how to divide the sum between himself $(x_{p})$ and another player $(10 - x_{p})$. The second player (the responder (R)) chooses to either accept or reject this proposal. If the second player accepts, the money is split according to the proposal. If the second player reject, neither player receives any money.
+We look at two players in two stages. The first player (the proposer (P)) receives a sum of money $(M = 10)$ and proposes how to divide the sum between himself $(x_{p})$, where $x_{p} \in \{ 0, 1, 2, \dotsc, 10 \}$, and another player $(10 - x_{p})$. The second player (the responder (R)) chooses to either accept or reject this proposal. If the second player accepts, the money is split according to the proposal. If the second player reject, neither player receives any money.
 
 Lets sum this up again:
 	\begin{itemize}
@@ -15,6 +15,20 @@ Lets sum this up again:
 				\item If R rejects, the whole money gets destroyed.
 			\end{itemize}
 	\end{itemize}
+	
+	extensive form %todo: image extensive form
+	
+	A strategy set in this game would have to look like
+	\begin{itemize}
+		\item Proposer sets a $x_{p}$
+		\item Reeciever decides for \textit{any} $x_{p}$ that might come up if he'd accept or reject that offer.
+	\end{itemize}
+	( strategy needs to specify a complete action plan. )
+	
+	
+	\textbf{1. Question:} Can the outcome $(5, 5)$ be stabilized as a Nash-Equilibrium outcome? \\
+	\textbf{Answer:} Yes. Assume all bidders except for bidder $i$ bid $0$.	
+
 \end{example}
 
 \newpage

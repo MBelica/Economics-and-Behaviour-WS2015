@@ -1,0 +1,27 @@
+% Strukturierung
+\theoremstyle{break}
+% Kursiv find ich nicht schön:
+\theorembodyfont{\normalfont}
+
+\newframedtheorem{sentence}{Sentence}[chapter]
+\newframedtheorem{lemma}[sentence]{Lemma}
+\newtheorem{prop}[sentence]{Proposition}
+\newframedtheorem{axiom}[sentence]{Axiom}
+\newtheorem{plaindefinition}[sentence]{Definition}
+\newenvironment{definition}{\begin{plaindefinition}}{\end{plaindefinition}}	
+\theoremsymbol{\ensuremath{_\blacksquare}}
+\newtheorem{remark}[sentence]{Remark}
+\theoremsymbol{}
+\newtheorem{example}[sentence]{Example}
+
+\theoremstyle{nonumberbreak}
+\newtheorem{proof}{Proof}
+\renewtheorem{sentence*}{Sentence}
+\renewtheorem{example*}{Example}
+\renewtheorem{remark*}{Remark}
+\newenvironment{definition*}{\begin{plaindefinition*}}{\end{plaindefinition*}}
+\theoremseparator{:}
+
+\theoremstyle{break}
+\theoremseparator{} 
+\newtheorem{conclusion}[sentence]{Conclusion}
