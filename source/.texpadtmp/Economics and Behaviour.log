@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.10.5)  20 NOV 2015 02:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.10.5)  20 NOV 2015 02:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1224,31 +1224,31 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 21.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on input line 43.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 47.
 [4
 
 ]
-Package hyperref Info: bookmark level for unknown plaindefinition defaults to 0 on input line 72.
+Package hyperref Info: bookmark level for unknown plaindefinition defaults to 0 on input line 71.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--102
+Underfull \hbox (badness 10000) in paragraph at lines 100--103
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 102.
+(babel)             in language  on input line 103.
 [5]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 126.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 125.
+(babel)             in language  on input line 126.
  [6]) (./chapter/2.lecture.tex
 Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
@@ -1351,7 +1351,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
 Here is how much of TeX's memory you used:
  24370 strings out of 493090
  424557 string characters out of 6134868
- 615676 words of memory out of 5000000
+ 616676 words of memory out of 5000000
  27315 multiletter control sequences out of 15000+600000
  24591 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
