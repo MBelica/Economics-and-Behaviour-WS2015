@@ -12,8 +12,8 @@ or the kind of equilibrium
 \begin{tabular}{|l|l|r|}
 	\hline\hline  			& {\textbf{complete information}} & {\textbf{incomplete information}} \\                                                    \hline   \textbf{static games} & Nash-Equilibrium & Bayesian-Nash-Equilibrium\arrayrulewidth2pt \\                                               \cline{1-3}   \textbf{dynamic games} & Perfect Nash-Equilibrium & Perfect Bayesian-Nash-Equilibrium \\ \hline\hline\end{tabular}
 
-\section{Games in strategic form}
-A game in strategic form is completely characterised by $\{ N, S, u \}$ where
+\section{Games in strategic form and the Nash-Equilibrium}
+A \begriff{game in strategic form} is completely characterised by $\{ N, S, u \}$ where
 	\begin{enumerate}
 		\item $N$ is the number of players and for player $n$ would that mean $n \in \{ 1, \dotsc, N \}$.
 		\item For each player we have a set of \textit{pure} strategies $S$.
@@ -29,7 +29,8 @@ For two players ($P1$ and $P2$) and two possible signals ($a$ and $b$) we could 
 We call a \begriff{set of strategies} in a game a complete plan of actions for each situation in the game.
 
 \begin{example}[Prisoner's Dilemma] \label{prisonersdilemma}
-Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge. They hope to get both sentenced to a year in prison on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity either to: betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent. The offer is:
+The \begriff{Prisoner's Dilemma} accures e.g. in the following situation: \\
+	 two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge. They hope to get both sentenced to a year in prison on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity either to: betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent. The offer is:
 	\begin{itemize}
 		\item If A and B each betray the other, each of them serves 6 years in prison
 		\item If A betrays B but B remains silent, A will be set free and B will serve 9 years in prison (and vice versa)
@@ -50,11 +51,11 @@ Two members of a criminal gang are arrested and imprisoned. Each prisoner is in 
 	\end{itemize}
 \end{example}
 
-\begin{definition*}
-	A strategy $s_{i}''$ is strictly dominated if and only if there exists another strategy $s_{i}'$ such that
+\begin{definition}[Strict dominance]
+	A strategy $s_{i}''$ is \begriff{strictly dominated} if and only if there exists another strategy $s_{i}'$ such that
 	\[ u(s_{i}', s_{-i}) \geq u(s_{i}'', s_{-i}) \quad \forall s_{-i} \in S_{i} \]	
 	In the \hyperref[prisonersdilemma]{Prisoner's Dilemma} $cooperate$ is strictly dominated by $defect$. Simply the elimination of strictly dominated strategies leads to the prediction of $(defects, defects)$.
-\end{definition*}
+\end{definition}
 
 \begin{example}
 	Iterated elimination of strictly dominated strategies leads to
@@ -77,8 +78,9 @@ Important to notice is that here, the prediction we derived relies immensely on 
 	\end{definition}
 
 \begin{example}[Battle of the sexes] \label{battleofthesexes}
-		The next example is a two-player coordination game. Image a couple that agreed to meet this evening, but both individually cannot recall if they will be attending the opera or a football match. The husband would most of all like to go to the football game. The wife would like to go to the opera. Both would prefer to go to the same place rather than different ones. \\
-		Hence this game in strategic form could look something like:
+		The next example is a two-player coordination game. \\
+		Image a couple that agreed to meet this evening, but both individually cannot recall if they will be attending the opera or a football match. The husband would most of all like to go to the football game. The wife would like to go to the opera. Both would prefer to go to the same place rather than different ones. \\ \\
+		Hence the \begriff{Battle of sexes} in strategic form could look something like:
 		
 		\begin{center}
 			\begin{tabular}{|l|l|r|}

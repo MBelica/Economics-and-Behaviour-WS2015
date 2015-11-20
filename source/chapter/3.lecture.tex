@@ -1,8 +1,10 @@
 %!TEX root = Economics and Behaviour.tex
 
-We started with the Dictator-Game, Christoph Engel wrote an interesting book to this topic (Dictator-Games: A meta study (2011)).
+\section{Subgame-Perfect Nash-Equilibrium}
 
-\begin{example}[Ultimatum-Game]	\label{ultimatumgame}
+The Dictator-Game is nicely analyzed by Christoph Engel in his book \textit{Dictator-Games: A meta study (2011)}. In the following part we'd like to look at a modification of the Dictator-Game:
+
+\begin{example}[Ultimatum-Game]	\label{ultimatumgame} \index{Ultimatum-Game} 
 The Ultimatum-Game is a dynamic game under complete information. \\
 We look at two players in two stages. The first player (the proposer (P)) receives a sum of money $(M = 10)$ and proposes how to divide the sum between himself $(x_{p})$, where $x_{p} \in \{ 0, 1, 2, \dotsc, 10 \}$, and another player $(10 - x_{p})$. The second player (the responder (R)) chooses to either accept or reject this proposal. If the second player accepts, the money is split according to the proposal. If the second player reject, neither player receives any money.
 
@@ -17,7 +19,7 @@ Lets sum this up again:
 	\end{itemize}
 	
 	\begin{center}
-		\begin{tikzpicture}[auto, level 1/.style={sibling distance=35mm/#1}, level distance=25mm ]
+		\begin{tikzpicture}[auto,level 1/.style={sibling distance=35mm/#1}, level distance=30mm]
 			\node [circle,draw] (z){$P$}
  						child {node [circle,draw] (a) {$10$}	}
  						child {node [] (b) {$ $}	}
@@ -25,14 +27,14 @@ Lets sum this up again:
   							child {node [circle,draw] (f) {$(x_{p}, 10 - x_{p})$}	}
   			 				child {node [circle,draw] (g) {$(0, 0)$}	}			
  						}
- 						child {node [] (d) {$ $}	}
+ 						child {node [] (d) {$$}	}
   						child {node [circle,draw] (e) {$0$}
 			};
 			\path (a) -- (b) node [midway] {$\cdots$};
 			\path (b) -- (c) node [midway] {$\cdots$};
 			\path (c) -- (d) node [midway] {$\cdots$};
 			\path (d) -- (e) node [midway] {$\cdots$};
-			\path (f) -- (g) node [midway] {$a / r$};
+			\path (f) -- (g) node [midway] {$a$ $/$ $r$};
 		\end{tikzpicture}				
 	\end{center}
 	
@@ -59,11 +61,18 @@ Lets sum this up again:
 
 As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes some of them even with implauseble threats. We'd therefore would like to refine this kind of equilibrium which leads to the (subgame) perfect Nash-Equilibrium.
 
-\begin{definition}[Subgame]
-	A subgame start at a desicion node. 
+\begin{definition}[Subgame] \index{subgame}
+	A subgame is any part of a game that meets the following criteria:
+	\begin{itemize}
+		\item It has a single initial node that is the only member of that node's information set (i.e. the initial node is in a singleton information set).
+		\item If a node is contained in the subgame then so are all of its successors
+		\item If a node in a particular information set is in the subgame then all members of that information set belong to the subgame.
+	\end{itemize}
 \end{definition}
 
-\begin{definition}[(Subgame-)Perfect Nash-Equilibrium]
+\begin{definition}[(Subgame-)Perfect Nash-Equilibrium] \index{Subgame-Perfect Nash-Equilibrium} 
+A strategy profile is a Subgame-Perfect Nash-Equilibrium if it represents a Nash equilibrium of every subgame of the original game. Informally, this means that if the players played any smaller game that consisted of only one part of the larger game and their behavior represents a Nash equilibrium of that smaller game, then their behavior is a subgame perfect equilibrium of the larger game. 
+
 	How to find a Perfect Nash-Equilibrium:
 	\begin{enumerate}
 		\item Define (one set of) optimal actions for the last subgame
@@ -128,5 +137,7 @@ As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes so
 	$\Rightarrow P$ plays $x_{p} = 9$ together with R always accepts if $x_{p} < 10$ and refuses for $x_{p} = 10$ constitutes also a Subgame-Perfect Nash-Equilibrium. 
 \end{example}
 
+\subsection{Presentations}
+todo %todo: have to sum those presentations and but them here at some point
 
 \newpage
