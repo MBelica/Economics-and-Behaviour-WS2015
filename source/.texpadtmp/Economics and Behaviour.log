@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.10.5)  20 NOV 2015 16:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.10.5)  24 NOV 2015 18:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1090,7 +1090,7 @@ Normal \count register pool exhausted, switching to extended pool.
 
 
 Writing index file "Economics and Behaviour".idx
-(/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.aux)
+(/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.aux)
 \openout1 = `"Economics and Behaviour.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -1119,7 +1119,7 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 18.
 LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
- (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.out) (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.out)
+ (/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.out) (/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.out)
 \@outlinefile=\write8
 \openout8 = `"Economics and Behaviour.out"'.
 
@@ -1186,7 +1186,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
  [2
 
-] (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.toc)
+] (/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.toc)
 \tf@toc=\write9
 \openout9 = `"Economics and Behaviour.toc"'.
 
@@ -1249,10 +1249,15 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 125.
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 128.
+(babel)             in language  on input line 132.
 [6]) (./chapter/2.lecture.tex
 Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
@@ -1318,21 +1323,29 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 140.
+
+Underfull \vbox (badness 1838) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 143.
- [11])
+(babel)             in language  on input line 146.
+ [11]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 147.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 147.
+ [12])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 35.
- (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.ind
+ (/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.ind
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 32.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
- [12
+ [13
 
 
 
@@ -1343,7 +1356,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
- (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.aux)
+ (/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 39.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
 Package rerunfilecheck Info: File `"Economics and Behaviour".out' has not changed.
@@ -1351,12 +1364,12 @@ Package rerunfilecheck Info: File `"Economics and Behaviour".out' has not change
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
- 24371 strings out of 493090
- 424573 string characters out of 6134868
- 615679 words of memory out of 5000000
- 27316 multiletter control sequences out of 15000+600000
+ 24376 strings out of 493090
+ 424797 string characters out of 6134868
+ 616673 words of memory out of 5000000
+ 27321 multiletter control sequences out of 15000+600000
  24591 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,9n,71p,611b,1063s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,9n,71p,765b,1063s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (12 pages, 65636 bytes).
+Output written on "/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (13 pages, 69804 bytes).
