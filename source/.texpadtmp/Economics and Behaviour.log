@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.10.5)  24 NOV 2015 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.10.5)  25 NOV 2015 13:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1249,15 +1249,10 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 125.
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 133.
 [6]) (./chapter/2.lecture.tex
 Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
@@ -1370,6 +1365,6 @@ Here is how much of TeX's memory you used:
  27321 multiletter control sequences out of 15000+600000
  24591 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,9n,71p,765b,1063s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,9n,71p,910b,1063s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (13 pages, 69804 bytes).
+Output written on "/Users/martin/Documents/Skripte/Skript - Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (13 pages, 71012 bytes).
