@@ -59,7 +59,7 @@ Lets sum this up again:
 	\textbf{Answer:} Yes. We set the strategy for P as $x_{p} = 0$ and for R demand accepting for $x_{p} = 0$ and rejecting for any other case, meaning for $x_{p} \geq 1$. 
 \end{example}
 
-As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes some of them even with implausible threats. We'd therefore would like to refine this kind of equilibrium which leads to the (sub-game) perfect Nash-Equilibrium.
+As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes some of them even with implausible threats. We'd therefore like to refine this kind of equilibrium which leads us to the (sub-game) perfect Nash-Equilibrium.
 
 \begin{definition}[Sub-game] \index{sub-game}
 	A sub-game is any part of a game that meets the following criteria:
@@ -67,6 +67,7 @@ As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes so
 		\item It has a single initial node that is the only member of that node's information set (i.e. the initial node is in a singleton information set).
 		\item If a node is contained in the sub-game then so are all of its successors
 		\item If a node in a particular information set is in the sub-game then all members of that information set belong to the sub-game.
+		\item and finally the node must not contain a deterministic state but instead at least one non-trivial choice
 	\end{itemize}
 \end{definition}
 
