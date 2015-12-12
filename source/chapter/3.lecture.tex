@@ -19,7 +19,7 @@ Lets sum this up again:
 	\end{itemize}
 	
 	\begin{center}
-		\begin{tikzpicture}[auto,level 1/.style={sibling distance=35mm/#1}, level distance=30mm]
+		\begin{tikzpicture}[auto, level distance=30mm, sibling distance=35mm]
 			\node [circle,draw] (z){$P$}
  						child {node [circle,draw] (a) {$10$}	}
  						child {node [] (b) {$ $}	}
@@ -95,15 +95,16 @@ A strategy profile is a Sub-game-Perfect Nash-Equilibrium if it represents a Nas
 				\begin{tikzpicture}[level/.style={sibling distance=25mm/#1}, level 	distance=25mm]
 					\node [circle,draw] (z){$P$}
  						child {node [circle,draw] (a) {$(10, 0)$}	}
- 						child {node [] (b) {$ $}	}
- 						child {node [circle,draw] (c) {$(5, 5)$}	}
- 						child {node [] (d) {$ $}	}
-  						child {node [circle,draw] (e) {$(0, 10)$}
+ 						child {node [circle,draw] (b) {$(9, 1)$}	}
+ 						child {node [] (c) {$ $}	}
+ 						child {node [circle,draw] (d) {$(5, 5)$}	}
+ 						child {node [] (e) {$ $}	}
+  						child {node [circle,draw] (f) {$(0, 10)$}
 					};
-					\path (a) -- (b) node [midway] {$\dotsc$};
 					\path (b) -- (c) node [midway] {$\dotsc$};
 					\path (c) -- (d) node [midway] {$\dotsc$};
 					\path (d) -- (e) node [midway] {$\dotsc$};
+					\path (e) -- (f) node [midway] {$\dotsc$};
 				\end{tikzpicture}				
 			\end{center}
 		\item Since we have already reached the first node, a simple analyse of the reduced situation for Nash-Equilibriums returns the Sub-Game-Perfect Nash-Equilibrium. In this situation $P$ is supposed to chose $x_{p} = 10$ since it results in the highest utility value.
