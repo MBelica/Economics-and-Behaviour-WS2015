@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.12.12)  12 DEC 2015 03:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.12.12)  12 DEC 2015 19:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1345,10 +1345,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
 Here is how much of TeX's memory you used:
  24384 strings out of 493090
  424744 string characters out of 6134867
- 616789 words of memory out of 5000000
+ 616790 words of memory out of 5000000
  27325 multiletter control sequences out of 15000+600000
  24591 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,9n,71p,910b,1059s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (14 pages, 74808 bytes).
+Output written on "/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (14 pages, 74928 bytes).
