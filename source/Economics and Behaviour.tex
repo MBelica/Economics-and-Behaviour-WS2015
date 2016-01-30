@@ -1,5 +1,9 @@
 \documentclass[a4paper,twoside,DIV15,BCOR12mm]{scrbook}
 
+%exam will consist of 2-4 excercises, 1h wiht 60 points meaning 1min for 1 point
+%per exercie there a 2 - 4 part
+%discuss paper, extend design, how to improve, report main questions, main designs, etc.
+
 \usepackage{Econ}
 
 %standard setup
@@ -24,17 +28,22 @@
 \input{Preface}
 \tableofcontents
 
-\input{chapter/1.lecture}
-\input{chapter/2.lecture}
-\input{chapter/3.lecture}
-\input{chapter/4.lecture}
+\input{chapter/1.topic}
+\input{chapter/2.topic}
+\input{chapter/3.topic}
+\input{chapter/4.topic}
+\input{chapter/5.topic}
+\input{chapter/6.topic}
+\input{chapter/7.topic}
+\input{chapter/8.topic}
+\input{chapter/9.topic}
 
 \appendix
 
-\newpage
+\cleardoublepage
+\phantomsection
 \renewcommand{\indexname}{Stichwortverzeichnis}
-\addcontentsline{toc}{section}{Stichwortverzeichnis}
+\addcontentsline{toc}{chapter}{\indexname}
 \printindex
-
 
 \end{document}

@@ -1,113 +1,0 @@
-%!TEX root = Economics and Behaviour.tex
-\chapter{Gametheorie}
-\section*{Introduction}
-First we have to clearify the kind of analysation we use for a game theoretical situations we distinguish between
-\begin{itemize}
-	\item \begriff{prescriptive} - means containing an indication of approval or disapproval
-	\item \begriff{normative} - means relating to a given model
-\end{itemize}
-
-or the kind of equilibrium
-
-\begin{tabular}{|l|l|r|}
-	\hline\hline  			& {\textbf{complete information}} & {\textbf{incomplete information}} \\                                                    \hline   \textbf{static games} & Nash-Equilibrium & Bayesian-Nash-Equilibrium\arrayrulewidth2pt \\                                               \cline{1-3}   \textbf{dynamic games} & Perfect Nash-Equilibrium & Perfect Bayesian-Nash-Equilibrium \\ \hline\hline\end{tabular}
-
-\section{Games in strategic form and the Nash-Equilibrium}
-A \begriff{game in strategic form} is completely characterised by $\{ N, S, u \}$ where
-	\begin{enumerate}
-		\item $N$ is the number of players and for player $n$ would that mean $n \in \{ 1, \dotsc, N \}$.
-		\item For each player we have a set of \textit{pure} strategies $S$.
-		\item For each player $n \in \{1, \dotsc, N \}$ we have an expected utility function $u : S \rightarrow \MdR$
-	\end{enumerate}
-
-For two players ($P1$ and $P2$) and two possible signals (lets call them $a$ and $b$) we use the matrix form, where $u_{i}(x, y)$ represents the utility function for player $i$ given the signal $x$ for $P1$ and the signal $y$ for $P2$ with $x, y \in \{ a, b\}$
-\begin{center}
-	\begin{tabular}{|c|c|c|}
-		\hline\hline  			$P1$ / $P2$ & \textbf{a} & \textbf{b} \\         		\cline{1-3}   					\textbf{a} & $( u_{1}(a, a) , u_{2}(a, a))$ & $(u_{1}(a, b), u_{2}(a, b))$	\arrayrulewidth2pt \\            	\cline{1-3}   					\textbf{b} & $( u_{1}(b, a), u_{2}(b, a))$ & $(u_{1}(b, b), u_{2}(b, b))$\\ \hline\hline	\end{tabular}	
-\end{center}
-
-We call a \begriff{set of strategies} complete plan of actions for each situation in a game.
-
-\begin{example}[Prisoner's Dilemma] \label{prisonersdilemma} \index{Prisoner's Dilemma}
-	 Image, two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge. They hope to get both sentenced to a year in prison on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity either to: betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent. The offer is:
-	\begin{itemize}
-		\item If A and B each betray the other, each of them serves 6 years in prison
-		\item If A betrays B but B remains silent, A will be set free and B will serve 9 years in prison (and vice versa)
-		\item If A and B both remain silent, both of them will only serve 1 year in prison (on the lesser charge)
-	\end{itemize}
-	
-\begin{center}
-	\begin{tabular}{|l|l|r|}
-		\hline\hline  			P1 / P2 & \textbf{defects} & \textbf{cooperates} \\         		\cline{1-3}   			\textbf{defects} & $(-6, -6)$ & $(0, -9)$ 	\arrayrulewidth2pt \\            	\cline{1-3}   			\textbf{cooperates} & $(-9, 0)$ & $(-1, -1)$ \\ \hline\hline	\end{tabular}	
-\end{center}
-
-
-	Other Interpretations of the Prisoner's Dilemma
-	\begin{itemize}
-		\item Collusion on prices
-		\item Investing in human capital vs. arming for a war
-		\item Buying a SUV vs. a smaller car
-	\end{itemize}
-\end{example}
-
-\begin{definition}[Strict dominance] \index{strictly dominated}
-	A strategy $s_{i}''$ is strictly dominated if and only if there exists another strategy $s_{i}'$ such that
-	\[ u(s_{i}', s_{-i}) \geq u(s_{i}'', s_{-i}) \quad \forall s_{-i} \in S_{i} \]	
-\end{definition}
-
-In the \hyperref[prisonersdilemma]{Prisoner's Dilemma} $cooperate$ is strictly dominated by $defect$. Simply the elimination of strictly dominated strategies leads to the prediction of $(defects, defects)$, even though $(cooperates, cooperates)$ would result in a lower prison sentence.
-
-
-\begin{example}
-	Iterated elimination of strictly dominated strategies leads to
-	\begin{itemize}
-		\item for Player 2: $l$ strictly dominates $r$
-		\item after having eliminated $r$ we can further eliminate $d$, since $d$ is then strictly dominated by $u$
-	\end{itemize}
-\end{example}
-
-Important to notice is that here, the prediction we derived relies immensely on the rationality of all players.
-
-\begin{definition}[A strategy profile] \label{strategyprofile} \index{strategy profile}
-	We call a vector $S = (S_{1}, \dotsc, S_{N})$ of dimension $N$ that specifies a strategy for every player in the game a strategy profile.
-\end{definition}
-
-\begin{definition}[Nash-Equilibrium] \label{nashequilibrium} \index{Nash-Equilibrium}
-	An informal definition of a Nash-Equilibrium would be that it is the mutual best response for every player, therefore a strategy profile in which no player can do better by unilaterally changing their strategy. \\
-	Defining it formally would mean: a strategy profile $x^{*} \in S$ is a Nash-Equilibrium if no unilateral deviation in strategy by any single player is profitable for tat player, that is
-	\[ \forall i \in \{1, \dotsc, N \}, x_{i} \in S_{i}: \quad u_{i}(x_{i}^{*}, x_{-i}^{*}) \geq u_{i}(x_{i}, x_{-i}^{*}) \]
-	\end{definition}
-
-\begin{example}[Battle of the sexes] \label{battleofthesexes} \index{Battle of sexes}
-		The next example is a two-player coordination game. \\
-		Image a couple that agreed to meet this evening, but both individually cannot recall if they will be attending the opera or a football match. The husband would most of all like to go to the football game. The wife would like to go to the opera. Both would prefer to go to the same place rather than different ones. \\ \\
-		Hence, the Battle of sexes in strategic form could look something like:
-		
-		\begin{center}
-			\begin{tabular}{|l|l|r|}
-				\hline\hline  					M / F & \textbf{football} & \textbf{opera} \\         				\cline{1-3}   					\textbf{football} & $(1, 2)$ & $(0, 0)$ 	\arrayrulewidth2pt \\            			\cline{1-3}   					\textbf{opera} & $(0, 0)$ & $(2, 1)$ \\ \hline\hline			\end{tabular}	
-		\end{center}
-		
-		The two Nash-Equilibriums in this game are $(opera, opera)$ and $(football, football)$ since
-		\[ u_{i}(opera, opera) \geq u_{i}(football, opera) \quad \forall i \in \{ 1, 2 \} \]
-\end{example}
-
-\begin{example}[The Beauty-Contest]
-Keynes described the action of rational agents in a market using an analogy based on a fictional newspaper contest, in which entrants are asked to choose the six most attractive faces from a hundred photographs. Those who picked the most popular faces are then eligible for a prize. The agents has to consider that not his preferred choice is the optimal strategy but the one with the highest chances to be chosen by all others. \\
-
-	The rest is missing in my notes. %todo: missing in my notes
-\end{example}
-
-\subsection{Presentations}
-	\begin{enumerate}[label=\alph*\upshape)]
-		\item \textbf{Unraveling in Guessing Games: An Experimental Study} \\ 
-			Consider the following game: a large number of players have to state in several rounds simultaneously a number in the closed interval [0, 100]. The winner is the person whose chosen number is closest to the mean of all chosen numbers multiplied by a parameter $p$, where $p$ is common knowledge. The payoff to the winner is a fixed amount, which is independent of the stated number and $p$. If there is a tie, the prize is divided equally among the winners. The other players whose chosen numbers are further away receive nothing. By analysing the given choices and using eye-tracking the author is trying to study the thought processes. In first period behaviour deviates strongly from gametheoretic solutions and the chosen numbers correlate in all rounds with the parameter. A kind of learning process or adjustment process seems to happen. $p$. 
-		\item \textbf{More than Meets the Eye: an Eye-tracking Experiment on the Beauty Contest Game}  \\
-			The beauty contest game has been used to analyse how many steps of reasoning subjects are able to perform. A common finding is that a majority seem to have low levels of reasoning. We use eye-tracking to investigate not only the number chosen in the game, but also the strategies in use and the numbers contemplated. We can show that not all cases that are seemingly level-1 or level-2 thinking indeed are – they might be highly sophisticated adaptations to beliefs about other people’s limited reasoning abilities.
-	\end{enumerate}
-
-DE15155341
-3012951544
-0721/14541076
-
-\newpage
