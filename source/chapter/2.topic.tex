@@ -1,12 +1,16 @@
 %!TEX root = Economics and Behaviour.tex
 
 
-\chapter{Standard theoretic basics for analysis of strategic behavior}
+\chapter{Standard theoretic basics for analysis of strategic behaviour}
 
 
-\section{Homo oeconomicus}
+\section{Homo oeconomicus} \index{Homo oeconomicus}
 
-what does homo oeconomicus imply?
+What does homo oeconomicus imply? We assume for a homo oeconomicus two main characteristics:
+\begin{enumerate}
+	\item Rationality
+	\item Maximising his/her utility
+\end{enumerate}
 
 
 \section{Games in strategic form}
@@ -68,7 +72,12 @@ In the \hyperref[prisonersdilemma]{Prisoner's Dilemma} $cooperate$ is strictly d
 
 Important to notice is that here, the prediction we derived relies immensely on the rationality of all players.
 
-% todo weak strategies
+\begin{definition}[Weak dominance] \index{weakly dominated}
+	A strategy $s_{i}''$ is weakly dominated by $s_{i}'$ if and only if for all possible outcomes 
+	\[ u(s_{i}', s_{-i}) \geq u(s_{i}'', s_{-i}) \quad \forall s_{-i} \in S_{i} \]	
+	and there exists at least one outcome where
+		\[ u(s_{i}', s_{-i}) > u(s_{i}'', s_{-i}) \quad \forall s_{-i} \in S_{i} \]	 
+\end{definition}
 
 \subsection{Nash-Equilibrium}
 
@@ -96,13 +105,25 @@ Important to notice is that here, the prediction we derived relies immensely on 
 		\[ u_{i}(opera, opera) \geq u_{i}(football, opera) \quad \forall i \in \{ 1, 2 \} \]
 \end{example}
 
-\begin{example}[The Beauty-Contest]
+\begin{example}[The Beauty-Contest] \index{Beauty-Contest}
 Keynes described the action of rational agents in a market using an analogy based on a fictional newspaper contest, in which entrants are asked to choose the six most attractive faces from a hundred photographs. Those who picked the most popular faces are then eligible for a prize. The agents has to consider that not his preferred choice is the optimal strategy but the one with the highest chances to be chosen by all others. \\
 
 	The rest is missing in my notes. %todo: missing in my notes
 \end{example}
 
 \subsection{Sub-game-Perfect Nash-Equilibrium}
+
+
+\begin{example}[Dictator-Game] \index{Dictator-Game}
+Proposer $P$ can split up 10 \euro ~ (up to \euro-level) between him and a Receiver $R$. 
+	\begin{itemize}
+		\item Question 1: Assume for a minute the Proposer $P$ is totally selfish and only cares about his own profits. Is there a strictly dominant strategy for $P$? \\
+			Yes! $(10, 0)$ (money Proposer, money Receiver) is strictly dominant.
+		\item Question 2: What if $P$ is a pure altruist and just cares about the money $R$ gets? \\
+			Then $(0, 10)$ is strictly dominant.
+	\end{itemize}
+\end{example}
+
 
 The Dictator-Game is nicely analysed by Christoph Engel in his book \textit{Dictator-Games: A meta study (2011)}. In the following part we'd like to look at a modification of the Dictator-Game:
 
@@ -279,13 +300,9 @@ A strategy profile is a Sub-game-Perfect Nash-Equilibrium if it represents a Nas
 
 
 	\textbf{3. Question:} is $(0, \dotsc, 0)$ also a strictly dominant strategy? \\
-	\textbf{Answer:} No. By analyzing the following situation we find a counterexample: \\
+	\textbf{Answer:} No. By analysing the following situation we find a counterexample: \\
 	$50$ players. $48$ of them bid the number $100$, bidder $49$ bids $0$ then the optimal strategy for player $50$ is to bid $97$. \\
 	Therefore $0$ is not the best answer and cannot be a strictly dominant strategy.
-\end{example}
-
-\begin{example}
-	something is missing in my notes here %todo missing in my notes
 \end{example}
 
 

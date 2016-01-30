@@ -1,13 +1,19 @@
-\contentsline {example}{{Example}{2.{1}}{Prisoner's Dilemma}}{5}{sentence.10}
-\contentsline {plaindefinition}{{Definition}{2.{2}}{Strict dominance}}{6}{sentence.12}
-\contentsline {example}{{Example}{2.{3}}{}}{6}{sentence.13}
-\contentsline {plaindefinition}{{Definition}{2.{4}}{A strategy profile}}{6}{sentence.15}
-\contentsline {plaindefinition}{{Definition}{2.{5}}{Nash-Equilibrium}}{6}{sentence.16}
-\contentsline {example}{{Example}{2.{6}}{Battle of the sexes}}{7}{sentence.17}
-\contentsline {example}{{Example}{2.{7}}{The Beauty-Contest}}{7}{sentence.18}
-\contentsline {example}{{Example}{2.{8}}{Ultimatum-Game}}{7}{sentence.20}
-\contentsline {plaindefinition}{{Definition}{2.{9}}{Sub-game}}{8}{sentence.21}
-\contentsline {plaindefinition}{{Definition}{2.{10}}{(Sub-game-)Perfect Nash-Equilibrium}}{9}{sentence.22}
-\contentsline {example}{{Example}{2.{11}}{Sequel to the Ultimatum-Game}}{9}{sentence.26}
-\contentsline {example}{{Example}{2.{12}}{Guessing-Game / Beauty-Contest}}{10}{sentence.32}
-\contentsline {example}{{Example}{2.{13}}{}}{11}{sentence.33}
+\contentsline {plaindefinition}{{Definition}{1.{1}}{static game}}{4}{sentence.5}
+\contentsline {plaindefinition}{{Definition}{1.{2}}{dynamic game}}{4}{sentence.6}
+\contentsline {plaindefinition}{{Definition}{1.{3}}{}}{4}{sentence.7}
+\contentsline {remark}{{Remark}{1.{4}}{imperfect vs incomplete information}}{4}{sentence.8}
+\contentsline {prop}{{Proposition}{1.{5}}{}}{5}{sentence.9}
+\contentsline {example}{{Example}{2.{1}}{Prisoner's Dilemma}}{6}{sentence.18}
+\contentsline {plaindefinition}{{Definition}{2.{2}}{Strict dominance}}{7}{sentence.20}
+\contentsline {example}{{Example}{2.{3}}{}}{7}{sentence.21}
+\contentsline {plaindefinition}{{Definition}{2.{4}}{Weak dominance}}{7}{sentence.22}
+\contentsline {plaindefinition}{{Definition}{2.{5}}{A strategy profile}}{8}{sentence.24}
+\contentsline {plaindefinition}{{Definition}{2.{6}}{Nash-Equilibrium}}{8}{sentence.25}
+\contentsline {example}{{Example}{2.{7}}{Battle of the sexes}}{8}{sentence.26}
+\contentsline {example}{{Example}{2.{8}}{The Beauty-Contest}}{8}{sentence.27}
+\contentsline {example}{{Example}{2.{9}}{Dictator-Game}}{8}{sentence.29}
+\contentsline {example}{{Example}{2.{10}}{Ultimatum-Game}}{9}{sentence.30}
+\contentsline {plaindefinition}{{Definition}{2.{11}}{Sub-game}}{10}{sentence.31}
+\contentsline {plaindefinition}{{Definition}{2.{12}}{(Sub-game-)Perfect Nash-Equilibrium}}{10}{sentence.32}
+\contentsline {example}{{Example}{2.{13}}{Sequel to the Ultimatum-Game}}{10}{sentence.36}
+\contentsline {example}{{Example}{2.{14}}{Guessing-Game / Beauty-Contest}}{11}{sentence.42}

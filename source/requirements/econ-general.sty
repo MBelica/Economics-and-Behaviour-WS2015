@@ -1,149 +1,139 @@
-\usepackage[utf8]{inputenc} 			% this is needed for umlauts
-\usepackage[ngerman]{babel} 			% this is needed for umlauts
-\usepackage[T1]{fontenc}     			% this is needed for correct output of umlauts in pdf
-\usepackage{acronym}
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{dsfont}
-\usepackage{enumitem}
-\usepackage{etex}
-\usepackage{fancybox}
-\usepackage{float}
-\usepackage{framed}
-\usepackage{graphicx}
-\usepackage{grffile}
-\usepackage[bookmarks,bookmarksnumbered,hypertexnames=false,pdfpagelayout=OneColumn,colorlinks]{hyperref}
-\usepackage{ifthen}
-\usepackage{makeidx}
-\usepackage{mathrsfs}
-\usepackage{mathtools}
-\usepackage[framed,amsmath,thmmarks,hyperref]{ntheorem}
-\usepackage{pstricks}
-\usepackage{slashed}
-\usepackage{stmaryrd}
-\usepackage{tikz}
-\usepackage{ulem}
-\usepackage{verbatim}
-\usepackage{wasysym}
-\usepackage[arrow, matrix, curve]{xy}
+% Add packages
+\usepackage[utf8]{inputenc} 			% umlauts
+\usepackage[T1]{fontenc} 				% correct output of umlauts in pdf
+\usepackage[ngerman]{babel} 			% german spelling
 
-\reserveinserts{28}
-\let\cleardoublepage\clearpage
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{2ex}
+\usepackage{acronym}					% acronyms
+\usepackage{amsmath}					% extended math enviroments
+\usepackage{chngcntr}					% corrected numbering of figures
+\usepackage{dsfont}						% example for mathds
+\usepackage{enumitem}					% enumerations
+\usepackage{etex}						% count which is used by some figures
+\usepackage{eurosym}					% euro sign
+\usepackage{float}						% figure floating
+\usepackage{framed}						% framed theorems
+\usepackage[bookmarks,bookmarksnumbered,hypertexnames=false,pdfpagelayout=OneColumn,colorlinks]{hyperref}		% hyperref throughout the document
+\usepackage{makeidx}					% the index
+\usepackage{mathtools} % advanced math tools
+\usepackage{nicefrac} % qr					
+\usepackage[framed,amsmath,thmmarks,hyperref]{ntheorem} % advanced theorems
+\usepackage{pgfplots}					% tikz
+\usepackage{pstricks}					% polygons etc.
+\usepackage{scrlayer-scrpage} 			% markleft
+\usepackage{scalerel,amssymb} 			% header, footer and amssymbols
+\usepackage{stackengine}					% text stacking
+\usepackage{ulem}						% underlined text
+\usepackage[arrow, matrix, curve]{xy} 	% xy-plots
+
+% Add tikz libraries
+\usetikzlibrary{intersections}
+\usetikzlibrary[topaths]
+
+
+% Removes common mistake occurring with broken unicode character 
+\DeclareUnicodeCharacter{00A0}{ }
+
 
 % Sets
-\def\MdR{\ensuremath{\mathbb{R}}}
-\def\mdr{\ensuremath{\mathbb{R}}}
-\def\imdr{\ensuremath{\overline\mdr}}
-\def\ifb{\ensuremath{\overline\fb}}
-\def\MdQ{\ensuremath{\mathbb{Q}}}
-\def\mdq{\ensuremath{\mathbb{Q}}}
-\def\MdZ{\ensuremath{\mathbb{Z}}}
-\def\mdz{\ensuremath{\mathbb{Z}}}
-\def\MdN{\ensuremath{\mathbb{N}}}
-\def\mdn{\ensuremath{\mathbb{N}}}
-\def\MdK{\ensuremath{\mathbb{K}}}
-\def\MdF{\ensuremath{\mathbb{F}}}
-\def\mdk{\ensuremath{\mathbb{K}}}
 \def\MdC{\ensuremath{\mathbb{C}}}
-\def\mdc{\ensuremath{\mathbb{C}}}
-\def\MdM{\ensuremath{\mathbb{M}}}
+\def\MdD{\ensuremath{\mathbb{D}}}
+\def\MdF{\ensuremath{\mathbb{F}}}
+\def\MdK{\ensuremath{\mathbb{K}}}
 \def\MdL{\ensuremath{\mathbb{L}}}
-\def\MdD{\mathbb{D}}
-\def\natn{\ensuremath{n\in\MdN}}
-\def\BV{\text{BV}}
-% Symbols
-\def\ep{\varepsilon}
-\def\vp{\varphi}
-\def\H{\text{H}} 					% set of accumulation values	
-\def\esssup{\text{ess sup}}			% ess Supremum
-\def\Z{\ensuremath{\mathfrak{Z}}}
-\def\fa{\mathfrak{A}}
-\def\fb{\mathfrak{B}}
-\def\fc{\mathfrak{C}}
-\def\fd{\mathfrak{D}}
-\def\fe{\mathfrak{E}}
-\def\fl{\mathfrak{L}}
-\def\fm{\mathfrak{M}}
-\def\cn{\mathcal{N}}
-\def\M{\mathfrak{M}}
-\def\fr{\mathfrak{R}}
-\def\cd{\mathcal{D}}
-\def\ce{\mathcal{E}}
-\def\cf{\mathcal{F}}
-\def\ci{\mathcal{I}}
-\def\co{\mathcal{O}}
-\def\cp{\mathcal{P}}
-\def\T{\mathscr{T}}
-\def\H{\mathscr{H}}
-\newcommand{\F}{\mathcal{F}}
-\newcommand{\MM}{\mathcal{M}}
+\def\MdM{\ensuremath{\mathbb{M}}}
+\def\MdN{\ensuremath{\mathbb{N}}}
+\def\MdQ{\ensuremath{\mathbb{Q}}}
+\def\MdR{\ensuremath{\mathbb{R}}}
+\def\MdZ{\ensuremath{\mathbb{Z}}}
+\def\ca{\ensuremath{\mathcal{A}}}
+\def\cb{\ensuremath{\mathcal{B}}}
+\def\cc{\ensuremath{\mathcal{C}}}
+\def\cd{\ensuremath{\mathcal{D}}}
+\def\ce{\ensuremath{\mathcal{E}}}
+\def\cf{\ensuremath{\mathcal{F}}}
+\def\cg{\ensuremath{\mathcal{G}}}
+\def\ch{\ensuremath{\mathcal{H}}}
+\def\ci{\ensuremath{\mathcal{I}}}
+\def\cj{\ensuremath{\mathcal{J}}}
+\def\ck{\ensuremath{\mathcal{K}}}
+\def\cl{\ensuremath{\mathcal{L}}}
+\def\cm{\ensuremath{\mathcal{M}}}
+\def\cn{\ensuremath{\mathcal{N}}}
+\def\co{\ensuremath{\mathcal{O}}}
+\def\cp{\ensuremath{\mathcal{P}}}
+\def\fa{\ensuremath{\mathfrak{A}}}
+\def\fb{\ensuremath{\mathfrak{B}}}
+\def\fc{\ensuremath{\mathfrak{C}}}
+\def\fd{\ensuremath{\mathfrak{D}}}
+\def\fe{\ensuremath{\mathfrak{E}}}
+\def\fl{\ensuremath{\mathfrak{L}}}
+\def\fm{\ensuremath{\mathfrak{M}}}
+\def\fr{\ensuremath{\mathfrak{R}}}
+\def\fz{\ensuremath{\mathfrak{Z}}}
+\def\scrt{\ensuremath{\mathscr{T}}}
+\def\scrh{\ensuremath{\mathscr{H}}}
 
+
+% Operators 
+\def\H{\text{H}}	
+\def\esssup{\text{ess sup}}	
+\def\gdw{\ensuremath{\iff}}
 \def\grad{\mathop{\rm grad}\nolimits}
 \def\rot{\mathop{\rm rot}\nolimits}
 \def\divv{\mathop{\rm div}\nolimits}
 \def\supp{\mathop{\rm supp}\nolimits}
-
 \def\kernn{\mathop{\rm Kern}\nolimits}
 \def\bild{\mathop{\rm Bild}\nolimits}
-
 \def\diag{\mathop{\rm diag}\nolimits}
 \def\spur{\mathop{\rm Spur}\nolimits}
 \def\Re{\mathop{\rm Re}\nolimits}
 \def\Im{\mathop{\rm Im}\nolimits}
-
 \def\Arg{\text{Arg}}
 \def\Log{\text{Log}}
-
-\def\L{\mathcal{L}}
-\def\K{\mathcal{K}}
 \def\ole{\varolessthan}
-\def\ul{\mathrm{d}}
+\def\<{\ensuremath{\langle}}
+\def\>{\ensuremath{\rangle}}
+\def\1{\ensuremath{\mathds{1}}}
+\def\EW{\ensuremath{\mathds{E}}}
+\def\supp{\ensuremath{\operatorname{supp}}}
+\def\ograph{\ensuremath{\operatorname{graph}}}
+\def\codim{\ensuremath{\operatorname{codim}}}
+\def\ospan{\ensuremath{\operatorname{span}}}
+\def\sign{\ensuremath{\operatorname{sign}}}
 
-% Strange Symbols
-\def\folgt{\ensuremath{\implies}}
-\def\equizu{\ensuremath{\iff}}
-\def\gdw{\equizu}
-\def\gdwnach{\equizunach}
-\def\gdwwegen{\equizuwegen}
-\newcommand{\folgtnach}[1]{\ensuremath{\DOTSB\;\xRightarrow{\text{#1}}\;}}
-\newcommand{\folgtwegen}[1]{\ensuremath{\DOTSB\;\xRightarrow{#1}\;}}
-\newcommand{\equizunach}[1]{\ensuremath{\DOTSB\;\xLeftrightarrow{\text{#1}}\;}}
-\newcommand{\equizuwegen}[1]{\ensuremath{\DOTSB\;\xLeftrightarrow{#1}\;}}
-\newcommand{\tonach}[1]{\ensuremath{\DOTSB\;\xrightarrow{\text{#1}}\;}}
-\newcommand{\towegen}[1]{\ensuremath{\DOTSB\;\xrightarrow{#1}\;}}
-\newcommand{\tomit}[1]{\ensuremath{\DOTSB\;\xrightarrow{#1}\;}}
+
+% Common formulars
+\newcommand{\vertiii}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert#1\right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}
+% \newcommand{\QR}[2]{\raisebox{1.5ex}{\ensuremath{#1}}\ensuremath{\mkern-4mu}\bigg/\ensuremath{\mkern-4mu}\raisebox{-1.5ex}{\ensuremath{#2}}}
+\newcommand{\QR}[2]{\nicefrac{#1}{#2}}
+\newcommand\equalhat{\let\savearraystretch\arraystretch\renewcommand\arraystretch{0.3}\begin{array}{c}\stretchto{\scalerel*[\widthof{=}]{\wedge}{\rule{1ex}{3ex}}}{0.5ex}\\ =\end{array}\let\arraystretch\savearraystretch}
+\newcommand{\diagentry}[1]{\mathmakebox[1.8em]{#1}}
+\newcommand{\xddots}{\raise 4pt \hbox {.}\mkern 6mu\raise 1pt \hbox {.}\mkern 6mu\raise -2pt \hbox {.}}
+\newcommand{\begriff}[1]{\index{#1}\textbf{#1}}
 \newcommand{\gleichnach}[1]{\ensuremath{\DOTSB\;\stackrel{\text{#1}}{=}\;}}
 \newcommand{\gleichwegen}[1]{\ensuremath{\DOTSB\;\stackrel{#1}{=}\;}}
 \newcommand{\da}{\mathrel{\mbox{$\coloneqq$}}}
 \newcommand{\ad}{\mathrel{\mbox{$\eqqcolon$}}}
 
-% Abbreviations
-\def\ffa{\text{ f\/fa }}
 
-% Common formulars
-\newcommand{\reihe}[1]{\sum_{n=1}^{\infty}{#1}}
-\newcommand{\reihenull}[1]{\sum_{n=0}^{\infty}{#1}}
-\newcommand{\vertiii}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert#1\right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}
-\newcommand{\QR}[2]{\raisebox{1ex}{\ensuremath{#1}}\ensuremath{\mkern-8mu}\bigg/\ensuremath{\mkern-8mu}\raisebox{-1ex}{\ensuremath{#2}}}
+% Miscellaneous
+\newcount\mycount
+\counterwithin{figure}{section}
+\let\cleardoublepage\clearpage
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex}
+\reserveinserts{28}
+\renewcommand*\thesection{\arabic{section}}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
 
-% Enumeration
-\renewcommand{\labelenumi}{(\arabic{enumi})}
-\renewcommand{\labelenumii}{(\roman{enumii})}
 
-% Text formatting
-\newcommand{\alt}[1]{(\textit{#1})}
-\newcommand{\indexlabel}[1]{\index{#1}}
-\newcommand{\begriff}[1]{\indexlabel{#1}\textbf{#1}}
-
-\DeclareMathOperator{\Mat}{Mat}
-\newcommand{\diagentry}[1]{\mathmakebox[1.8em]{#1}}
-\newcommand{\xddots}{%
-  \raise 4pt \hbox {.}
-  \mkern 6mu
-  \raise 1pt \hbox {.}
-  \mkern 6mu
-  \raise -2pt \hbox {.}
-}
+%Commands to be used as metadata.
+\newcommand{\teachingsubject}[1]{} % Should be complete, work-in-progress, partial or unknown
+\newcommand{\lecturer}[1]{}
+\newcommand{\semester}[1]{}
+\newcommand{\university}[1]{}
+\newcommand{\scriptauthor}[1]{}
+\newcommand{\languages}[1]{} % Language tags (English, German, French, ...) 
+\newcommand{\content}[1]{} % Content Description: It should be possible to mark the content with what it teaches. This way, students could take the keywords they have to know and look for courses which teach those keywords.
+\newcommand{\dependencies}[1]{} % Dependencies
+\newcommand{\scriptstate}[1]{} % Should be complete, work-in-progress, partial or unknown
