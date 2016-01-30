@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.12.12)  30 JAN 2016 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.12.12)  30 JAN 2016 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1127,22 +1127,22 @@ Writing index file "Economics and Behaviour".idx
 (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.aux)
 \openout1 = `"Economics and Behaviour.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring ON on input line 9.
+Package hyperref Info: Link coloring ON on input line 7.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1150,9 +1150,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count291
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 7.
+LaTeX Info: Redefining \pageref on input line 7.
+LaTeX Info: Redefining \nameref on input line 7.
  (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.out) (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.out)
 \@outlinefile=\write7
 \openout7 = `"Economics and Behaviour.out"'.
@@ -1160,25 +1160,25 @@ LaTeX Info: Redefining \nameref on input line 9.
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.12} into your preamble.
- on input line 9.
+ on input line 7.
 
 (./Titlepage.tex)
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 14.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 12.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 12.
  [1
 
 
@@ -1205,13 +1205,13 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 15.
  [2
 
 ] (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.toc
-Overfull \hbox (20.29306pt too wide) in paragraph at lines 17--17
+Overfull \hbox (19.07602pt too wide) in paragraph at lines 17--17
  [][] [][] []  
  []
 
@@ -1263,9 +1263,9 @@ Package babel Info: Redefining ngerman shorthand "~
 ]
 Package hyperref Info: bookmark level for unknown prop defaults to 0 on input line 46.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 57.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 57.
  [5]) (./chapter/2.topic.tex
 Kapitel 2.
 Package babel Info: Redefining ngerman shorthand "|
@@ -1479,8 +1479,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []
 
 
-Overfull \hbox (14.05171pt too wide) in paragraph at lines 38--39
-[]\T1/cmr/m/n/10.95 As so-lu-ti-on is pro-pu-sed in both pa-pers the one from Cap-lin/Eliaz and the one from Szech/Schweizer:
+Overfull \hbox (13.7495pt too wide) in paragraph at lines 38--39
+[]\T1/cmr/m/n/10.95 As so-lu-ti-on is pro-po-sed in both pa-pers the one from Cap-lin/Eliaz and the one from Szech/Schweizer:
  []
 
 
@@ -1495,19 +1495,19 @@ Package babel Info: Redefining ngerman shorthand "~
 [20
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-
- []
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 48.
-[21])
+(babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 55.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 34.
+(babel)             in language  on input line 55.
+ [21])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
  (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.ind
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 59.
@@ -1523,22 +1523,22 @@ Package babel Info: Redefining ngerman shorthand "~
 \tf@thm=\write9
 \openout9 = `"Economics and Behaviour.thm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
  (/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 35.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `"Economics and Behaviour".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 34743 strings out of 493090
- 773816 string characters out of 6134867
- 1064240 words of memory out of 5000000
- 37557 multiletter control sequences out of 15000+600000
+ 34745 strings out of 493090
+ 773841 string characters out of 6134867
+ 1064334 words of memory out of 5000000
+ 37559 multiletter control sequences out of 15000+600000
  21213 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,20n,93p,1023b,1083s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on "/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (22 pages, 118492 bytes).
+Output written on "/Users/martin/Documents/Skripte/Economics-and-Behaviour-WS2015/source/.texpadtmp/Economics and Behaviour.dvi" (22 pages, 120164 bytes).

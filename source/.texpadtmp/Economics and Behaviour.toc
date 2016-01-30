@@ -12,9 +12,9 @@
 \contentsline {section}{\numberline {4.1}Presented papers}{14}{section.46}
 \contentsline {chapter}{\numberline {5}Level k as a prominent example of a nonstandard/behavioural approach}{15}{chapter.47}
 \contentsline {section}{\numberline {5.1}Presented papers}{15}{section.48}
-\contentsline {chapter}{\numberline {6}Organizations and Markets: The role of market incentives}{16}{chapter.49}
+\contentsline {chapter}{\numberline {6}Organisations and Markets: The role of market incentives}{16}{chapter.49}
 \contentsline {section}{\numberline {6.1}Presented papers}{16}{section.50}
-\contentsline {chapter}{\numberline {7}Organizations and Markets: The role of moral dimensions of markets and organizations}{17}{chapter.51}
+\contentsline {chapter}{\numberline {7}Organisations and Markets: The role of moral dimensions of markets and organisations}{17}{chapter.51}
 \contentsline {section}{\numberline {7.1}Presented papers}{17}{section.52}
 \contentsline {chapter}{\numberline {8}Ethics in science}{18}{chapter.53}
 \contentsline {section}{\numberline {8.1}Pleasures of Skill and Moral Conduct}{18}{section.54}
@@ -22,4 +22,5 @@
 \contentsline {section}{\numberline {8.3}Presented papers}{19}{section.56}
 \contentsline {chapter}{\numberline {9}Non-standard utility}{20}{chapter.57}
 \contentsline {section}{\numberline {9.1}Anticipatory utility}{20}{section.58}
-\contentsline {chapter}{Index}{22}{section*.59}
+\contentsline {section}{\numberline {9.2}Presented papers}{21}{section.59}
+\contentsline {chapter}{Index}{22}{section*.60}
