@@ -23,4 +23,4 @@
 \contentsline {chapter}{\numberline {9}Non-standard utility}{20}{chapter.57}
 \contentsline {section}{\numberline {9.1}Anticipatory utility}{20}{section.58}
 \contentsline {section}{\numberline {9.2}Presented papers}{21}{section.59}
-\contentsline {chapter}{Index}{22}{section*.60}
+\contentsline {chapter}{Index}{23}{section*.60}
