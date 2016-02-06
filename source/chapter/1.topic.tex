@@ -3,20 +3,28 @@
 
 \chapter{Introduction to behavioural and experimental economics}
 
-First we have to clarify the kind of analysation we use for a game theoretical situations we distinguish between
-\begin{itemize}
-	\item \begriff{prescriptive} - means containing an indication of approval or disapproval
-	\item \begriff{normative} - means relating to a given model
-\end{itemize}
+The games studied in game theory are well-defined mathematical objects. To be fully defined a game must specify the following elements $\{ N, S, u \}$ where
 
-or the kind of equilibrium
+	\begin{enumerate}
+		\item $N$ is the number of players and for player $n$ would that mean $n \in \{ 1, \dotsc, N \}$.
+		\item For each player we have a set of \textit{pure} strategies $S$.
+		\item For each player $n \in \{1, \dotsc, N \}$ we have an expected utility function $u : S \rightarrow \MdR$
+	\end{enumerate}
 
+
+\section{Homo oeconomicus and the representation of games} \index{Homo oeconomicus}
+First, analysing a game one ofter determines the optimal strategy for a playing by assuming that he is an homo oeconomicus. What does this imply? We assume for a homo oeconomicus two main characteristics:
+\begin{enumerate}
+	\item Rationality
+	\item Maximising his/her utility
+\end{enumerate}
+
+
+This assumptions can lead to different kinds of equilibrium where the most commons are \\ \\
 \begin{tabular}{|l|l|r|}
 	\hline\hline  			& {\textbf{complete information}} & {\textbf{incomplete information}} \\                                                    \hline   \textbf{static games} & Nash-Equilibrium & Bayesian-Nash-Equilibrium\arrayrulewidth2pt \\                                               \cline{1-3}   \textbf{dynamic games} & Perfect Nash-Equilibrium & Perfect Bayesian-Nash-Equilibrium \\ \hline\hline\end{tabular}
-	
-~\newline	
-	
-Where the following definitions hold (for the definition of a strategic game see chapter 2):
+
+While the following definitions hold:
 
 \begin{definition}[static game] \index{static game}
 	A static game is one in which all players make decisions (or select a strategy) simultaneously, without knowledge of the strategies that are being chosen by other players. Even though the decisions may be made at different points in time, the game is simultaneous because each player has no information about the decisions of others; thus, it is as if the decisions are made simultaneously. Simultaneous games are represented by the normal form and solved using the concept of a Nash equilibrium.
@@ -30,22 +38,33 @@ When players interact by playing a similar stage game (such as the prisoner's di
 	In a game of \begriff{complete information}, the structure of the game and the payoff functions of the players are commonly known but players may not see all of the moves made by other players (for instance, the initial placement of ships in Battleship); there may also be a chance element (as in most card games). Conversely, in games of perfect information, every player observes other players' moves, but may lack some information on others' payoffs, or on the structure of the game.
 \end{definition}
 
-\begin{remark} [imperfect vs incomplete information] 
-In a game of imperfect information, players are simply unaware of the actions chosen by other
-players. However they know who the other players are hat their possible strategies/actions are and are, what their possible strategies/actions are, and the preferences/payoffs of these other players. Hence, information about the other players in imperfect information is complete.
+\begin{definition}[incomplete information] 
+A game of \begriff{incomplete information} is a game where the players do not have common knowledge of the game being played. Among the aspects of the game that the players might not have common knowledge of are:
+	\begin{itemize}
+		\item Payoffs
+		\item Who the other players are
+		\item What moves are possible
+		\item How outcome depends on the action.
+		\item What opponent knows, and what he knows I know....
+	\end{itemize}
+\end{definition}
 
-In \begriff{incomplete information} games, players may or may not know some information about the other players, e.g. their “type”, their strategies, payoffs or their preferences.	
-\end{remark}
+Second, we have to clarify how we are going to interprete our results. One could see game theory as a predictive tool for the behaviour of human beings, but also as simply a suggestion for how people ought to behave. Therefore we distinguish between
+\begin{itemize}
+	\item \begriff{prescriptive} - means containing an indication of approval or disapproval
+	\item \begriff{normative} - means relating to a given model
+\end{itemize}
+	
 
-\begin{prop} \index{Experimental economics}
-Experimental economists generally adhere to the following methodological guidelines:
+\section{Experimental economics} \index{Experimental economics}
+To analyse a real-life situation with these methods one establishes a game representing the situation and collects data to estimate effect size, test the validity of economic theories, and illuminate market mechanisms. \\
+For these experiments economists generally adhere to the following methodological guidelines:
 	\begin{itemize}
 		\item Incentivise subjects with real monetary payoffs (trustworthy).
 		\item Publish full experimental instructions (transparency).
 		\item Do not use deception (honesty).
 		\item Avoid introducing specific, concrete context (generalisation).
 	\end{itemize}
-\end{prop}
 
 
 \newpage

@@ -1,26 +1,28 @@
 \select@language {ngerman}
 \contentsline {chapter}{\numberline {1}Introduction to behavioural and experimental economics}{4}{chapter.4}
-\contentsline {chapter}{\numberline {2}Standard theoretic basics for analysis of strategic behaviour}{6}{chapter.10}
-\contentsline {section}{\numberline {2.1}Homo oeconomicus}{6}{section.11}
-\contentsline {section}{\numberline {2.2}Games in strategic form}{6}{section.14}
-\contentsline {subsection}{\numberline {2.2.1}Dominant strategies}{7}{subsection.19}
-\contentsline {subsection}{\numberline {2.2.2}Nash-Equilibrium}{8}{subsection.23}
-\contentsline {subsection}{\numberline {2.2.3}Sub-game-Perfect Nash-Equilibrium}{8}{subsection.28}
+\contentsline {section}{\numberline {1.1}Homo oeconomicus and the representation of games}{4}{section.8}
+\contentsline {section}{\numberline {1.2}Experimental economics}{5}{section.15}
+\contentsline {chapter}{\numberline {2}Standard theoretic basics for analysis of strategic behaviour}{6}{chapter.16}
+\contentsline {section}{\numberline {2.1}Games in strategic form}{6}{section.17}
+\contentsline {subsection}{\numberline {2.1.1}Dominant strategies}{7}{subsection.19}
+\contentsline {subsection}{\numberline {2.1.2}Nash-Equilibrium}{7}{subsection.23}
+\contentsline {subsection}{\numberline {2.1.3}Sub-game-Perfect Nash-Equilibrium}{8}{subsection.28}
 \contentsline {chapter}{\numberline {3}An ultimatum game with multidimensional response strategies}{13}{chapter.43}
 \contentsline {section}{\numberline {3.1}Presented papers}{13}{section.44}
 \contentsline {chapter}{\numberline {4}Cooling Off in Negotiations: Does It Work?}{14}{chapter.45}
 \contentsline {section}{\numberline {4.1}Presented papers}{14}{section.46}
 \contentsline {chapter}{\numberline {5}Level k as a prominent example of a nonstandard/behavioural approach}{15}{chapter.47}
 \contentsline {section}{\numberline {5.1}Presented papers}{15}{section.48}
-\contentsline {chapter}{\numberline {6}Organisations and Markets: The role of market incentives}{16}{chapter.49}
-\contentsline {section}{\numberline {6.1}Presented papers}{16}{section.50}
-\contentsline {chapter}{\numberline {7}Organisations and Markets: The role of moral dimensions of markets and organisations}{17}{chapter.51}
-\contentsline {section}{\numberline {7.1}Presented papers}{17}{section.52}
-\contentsline {chapter}{\numberline {8}Ethics in science}{18}{chapter.53}
-\contentsline {section}{\numberline {8.1}Pleasures of Skill and Moral Conduct}{18}{section.54}
-\contentsline {section}{\numberline {8.2}Moral and Markets}{18}{section.55}
-\contentsline {section}{\numberline {8.3}Presented papers}{19}{section.56}
-\contentsline {chapter}{\numberline {9}Non-standard utility}{20}{chapter.57}
-\contentsline {section}{\numberline {9.1}Anticipatory utility}{20}{section.58}
-\contentsline {section}{\numberline {9.2}Presented papers}{21}{section.59}
-\contentsline {chapter}{Index}{23}{section*.60}
+\contentsline {chapter}{\numberline {6}Organisations and Markets:}{16}{chapter.49}
+\contentsline {section}{\numberline {6.1}The role of market incentives}{16}{section.50}
+\contentsline {subsection}{\numberline {6.1.1}Presented papers}{16}{subsection.51}
+\contentsline {section}{\numberline {6.2}The role of moral dimensions of markets and organisations}{18}{section.52}
+\contentsline {subsection}{\numberline {6.2.1}Presented papers}{18}{subsection.53}
+\contentsline {chapter}{\numberline {7}Ethics in science}{20}{chapter.54}
+\contentsline {section}{\numberline {7.1}Pleasures of Skill and Moral Conduct}{20}{section.55}
+\contentsline {section}{\numberline {7.2}Moral and Markets}{20}{section.56}
+\contentsline {section}{\numberline {7.3}Presented papers}{21}{section.57}
+\contentsline {chapter}{\numberline {8}Non-standard utility}{22}{chapter.58}
+\contentsline {section}{\numberline {8.1}Anticipatory utility}{22}{section.59}
+\contentsline {section}{\numberline {8.2}Presented papers}{23}{section.60}
+\contentsline {chapter}{Index}{25}{section*.61}
