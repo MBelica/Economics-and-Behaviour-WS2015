@@ -1,7 +1,11 @@
 \begin{theindex}
 
-  \item Battle of sexes, \hyperpage{7}
-  \item Beauty-Contest, \hyperpage{8}
+  \item ambiguity, \hyperpage{5}
+
+  \indexspace
+
+  \item Battle of sexes, \hyperpage{8}
+  \item Beauty-Contest, \hyperpage{9}
 
   \indexspace
 
@@ -9,20 +13,21 @@
 
   \indexspace
 
-  \item Dictator-Game, \hyperpage{8}
+  \item Dictator-Game, \hyperpage{9}
   \item dynamic game, \hyperpage{4}
 
   \indexspace
 
-  \item Experimental economics, \hyperpage{5}
+  \item Experimental economics, \hyperpage{6}
 
   \indexspace
 
-  \item Guessing-Game, \hyperpage{11}
+  \item game, \hyperpage{4}
+  \item Guessing-Game, \hyperpage{12}
 
   \indexspace
 
-  \item Homo oeconomicus, \hyperpage{4}
+  \item homo oeconomicus, \hyperpage{4}
 
   \indexspace
 
@@ -30,29 +35,29 @@
 
   \indexspace
 
-  \item Nash-Equilibrium, \hyperpage{7}
+  \item Nash-Equilibrium, \hyperpage{8}
   \item normative, \hyperpage{5}
 
   \indexspace
 
   \item prescriptive, \hyperpage{5}
-  \item Prisoner's Dilemma, \hyperpage{6}
+  \item Prisoner's Dilemma, \hyperpage{7}
 
   \indexspace
 
-  \item set of strategies, \hyperpage{6}
+  \item set of strategies, \hyperpage{7}
   \item static game, \hyperpage{4}
-  \item strategy profile, \hyperpage{7}
-  \item strictly dominated, \hyperpage{7}
-  \item sub-game, \hyperpage{9}
-  \item Sub-game-Perfect Nash-Equilibrium, \hyperpage{10}
+  \item strategy profile, \hyperpage{8}
+  \item strictly dominated, \hyperpage{8}
+  \item sub-game, \hyperpage{10}
+  \item Sub-game-Perfect Nash-Equilibrium, \hyperpage{11}
 
   \indexspace
 
-  \item Ultimatum-Game, \hyperpage{8}
+  \item Ultimatum-Game, \hyperpage{9}
 
   \indexspace
 
-  \item weakly dominated, \hyperpage{7}
+  \item weakly dominated, \hyperpage{8}
 
 \end{theindex}

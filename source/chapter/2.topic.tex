@@ -84,15 +84,14 @@ Important to notice is that here, the prediction we derived relies immensely on 
 			\begin{tabular}{|l|l|r|}
 				\hline\hline  					M / F & \textbf{football} & \textbf{opera} \\         				\cline{1-3}   					\textbf{football} & $(1, 2)$ & $(0, 0)$ 	\arrayrulewidth2pt \\            			\cline{1-3}   					\textbf{opera} & $(0, 0)$ & $(2, 1)$ \\ \hline\hline			\end{tabular}	
 		\end{center}
-		2
+		
 		The two Nash-Equilibriums in this game are $(opera, opera)$ and $(football, football)$ since
 		\[ u_{i}(opera, opera) \geq u_{i}(football, opera) \quad \forall i \in \{ 1, 2 \} \]
 \end{example}
 
-\begin{example}[The Beauty-Contest] \index{Beauty-Contest}
+\begin{example}[The Beauty-Contest] \index{Beauty-Contest} \label{Beauty-Contest}
 Keynes described the action of rational agents in a market using an analogy based on a fictional newspaper contest, in which entrants are asked to choose the six most attractive faces from a hundred photographs. Those who picked the most popular faces are then eligible for a prize. The agents has to consider that not his preferred choice is the optimal strategy but the one with the highest chances to be chosen by all others. \\
-
-	The rest is missing in my notes. %todo: missing in my notes
+	An analysation of equilibria you find \hyperref[Guessing-Game]{here}.
 \end{example}
 
 \subsection{Sub-game-Perfect Nash-Equilibrium}
@@ -247,8 +246,8 @@ A strategy profile is a Sub-game-Perfect Nash-Equilibrium if it represents a Nas
 \end{example}
 
 
-\begin{example}[Guessing-Game / Beauty-Contest] \index{Guessing-Game}
-	In a game with at least two players we can describe the sequel for the Guessing-Game as following
+\begin{example}[Guessing-Game / Beauty-Contest] \index{Guessing-Game} \label{Guessing-Game}
+	In a game with at least two players we can describe the sequel for a Guessing-Game (e.g. the \hyperref[Beauty-Contest]{Beauty-Contest}) as follows
 	\begin{itemize}
 		\item $n \geq 2$ players
 		\item Every player guesses a number $b_{i} \in \{0, 1, 2, \dotsc, 100 \}$
