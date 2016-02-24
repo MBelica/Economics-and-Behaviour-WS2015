@@ -1,0 +1,46 @@
+%!TEX root = Economics and Behaviour.tex
+
+
+\chapter{Standard theoretic basics for analysis of strategic behaviour}
+
+A \begriff{game} is a formal representation of a situation in which a number of individuals interact in a setting of \textit{strategic interdependence}.
+To be fully defined a game must specify the following set of elements $\{ N, S, u \}$ where
+	\begin{enumerate}
+		\item $N$ is the finite number of players and for player $n$ would that mean $n \in \{ 1, \dotsc, N \}$.
+		\item For each player we have a set of \textit{pure} strategies $S$.
+		\item For each player $n \in \{1, \dotsc, N \}$ we have an expected utility function $u : S \rightarrow \MdR$
+	\end{enumerate}
+
+For example Tick-Tack-Toe games, auctions or even meetings can be described with games. 
+
+In the following we will analyse different games 
+
+\begin{tabular}{|l|l|r|}
+	\hline\hline  			& {\textbf{complete information}} & {\textbf{incomplete information}} \\                                                    \hline   \textbf{static games} & Nash-Equilibrium & Bayesian-Nash-Equilibrium\arrayrulewidth2pt \\                                               \cline{1-3}   \textbf{dynamic games} & Perfect Nash-Equilibrium & Perfect Bayesian-Nash-Equilibrium \\ \hline\hline\end{tabular}
+
+While the following definitions hold:
+
+\begin{definition}[static game]
+	A \begriff{static game} is one in which all players make decisions (or select a strategy) simultaneously, without knowledge of the strategies that are being chosen by other players. Even though the decisions may be made at different points in time, the game is simultaneous because each player has no information about the decisions of others; thus, it is as if the decisions are made simultaneously. Simultaneous games are represented by the normal form and solved using the concept of a Nash equilibrium.
+\end{definition}
+
+\begin{definition}[dynamic game] \index{dynamic game}
+A \begriff{dynamic game} is a game where one player chooses their action before the others choose theirs. Importantly, the later players must have some information of the first's choice, otherwise the difference in time would have no strategic effect. Sequential games hence are governed by the time axis, and represented in the form of decision trees. When players interact by playing a similar stage game (such as the prisoner's dilemma) numerous times, the game is called a dynamic, sequential or repeated game. Unlike simultaneous games, players have at least some information about the strategies chosen on others and thus may contingent their play on past moves.
+\end{definition}
+
+\begin{definition}[complete information]
+	In a game of \begriff{complete information}, the structure of the game and the payoff functions of the players are commonly known but players may not see all of the moves made by other players (for instance, the initial placement of ships in Battleship); there may also be a chance element (as in most card games). Conversely, in games of perfect information, every player observes other players' moves, but may lack some information on others' payoffs, or on the structure of the game.
+\end{definition}
+
+\begin{definition}[incomplete information] 
+A game of \begriff{incomplete information} is a game where the players do not have common knowledge of the game being played. Among the aspects of the game that the players might not have common knowledge of are: payoffs, who the other players are, what moves are possible, wow outcome depends on the action and  what opponent knows, and what he knows I know....
+\end{definition}
+
+We will further stumble upon the topic of \begriff{ambiguity}. As soon as we do not know the probability distribution of the outcomes we talk about ambiguity. An ambiguity averse individual would therefore  rather choose an alternative where the probability distribution of the outcomes is known over one where the probabilities are unknown.
+
+The distinction between ambiguity aversion and risk aversion is important but subtle. Risk aversion comes from a situation where a probability can be assigned to each possible outcome of a situation and it is defined by the preference between a risky alternative and its expected value. Ambiguity aversion applies to a situation when the probabilities of outcomes are unknown (Epstein 1999) and it is defined through the preference between risky and ambiguous alternatives, after controlling for preferences over risk. \\
+
+
+
+
+\newpage
