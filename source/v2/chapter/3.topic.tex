@@ -1,32 +1,51 @@
 %!TEX root = Economics and Behaviour.tex
 
 
-\section{Games in extensive form}
+\section{Extensive form}
+
+In game theoretic view the strategic and the extensive form are merely two different representations of the same strategic decision situation. But while the strategic form often only provides a static description of a game, the extensiv form provides additional properties like move order or level of information in a game.
 
 \begin{example}[Dictator-Game] \index{Dictator-Game}
-Proposer $P$ can split up 10 \euro ~ (up to \euro-level) between him and a Receiver $R$. 
+Image two players, a proposer $P$ can split up 10 \euro ~ (up to \euro-level) between him and a receiver $R$. 
 	\begin{itemize}
-		\item Question 1: Assume for a minute the Proposer $P$ is totally selfish and only cares about his own profits. Is there a strictly dominant strategy for $P$? \\
-			Yes! $(10, 0)$ (money Proposer, money Receiver) is strictly dominant.
-		\item Question 2: What if $P$ is a pure altruist and just cares about the money $R$ gets? \\
+		\item Question 1: Assume for a minute $P$ is totally selfish and only cares about his own profits. Is there a strictly dominant strategy for $P$? \\
+			Yes! $(10, 0)$ (money proposer, money receiver) is strictly dominant.
+		\item Question 2: What if $P$ is a pure altruist and just cares about the money $R$ receives? \\
 			Then $(0, 10)$ is strictly dominant.
 	\end{itemize}
 \end{example}
 
+This simply example we are going to extend into a dynamic game with the addition that the receiver can after the proposal either accept or reject the offer depending on the size
 
-The Dictator-Game is nicely analysed by Christoph Engel in his book \textit{Dictator-Games: A meta study (2011)}. In the following part we'd like to look at a modification of the Dictator-Game:
+The extensive form as we will find later not far to seek has often the form a a tree, it consists of:
+\begin{itemize} \index{extensive form}
+	\item A finite set of nodes $\mathcal{X}$, a finite set of possible actions $\mathcal{A}$ and a finite set of players ${1, \dotsc, N}$
+	\item A function $p \colon \mathcal{X} \rightarrow \{ \mathcal{X} \cup \emptyset \}$ specifying a single immediate predecessor of each node $x \in \mathcal{X}$; except for $x_{0}$ is the \begriff{initial node}. The immediate successor nodes of $x$ are $s(x) = p^{-1}(x)$. \\
+		To have a tree structure, a predecessor can never be a successor and vice versa. The set of \begriff{terminal nodes} is $T = \{ x \in \mathcal{X}: s(x) = \emptyset \}$. All other nodes $\mathcal{X} \setminus T$ are \begriff{decision nodes}.
+	\item A function $\alpha \colon \mathcal{X} \setminus \{ x_{0} \} \rightarrow \mathcal{A}$ giving the action that leads to any non-initial node $x$ from its immediate predecessor $p(x)$ with
+		\[ x', x'' \in s(x); x' \neq x'' \Rightarrow \alpha(x') \neq \alpha(x''). \]
+		The set of choices at decision node $x$ is $c(x) = \{ a \in \mathcal{A} : a = \alpha(x')$ for some $x' \in s(x) \}$
+	\item A collection of information sets $\mathcal{H}$, and a function $H : \mathcal{X} \rightarrow \mathcal{H}$, assigning each decision node $x$ to an information set $H(x) \in \mathcal{H}$ with $c(x) = c(x')$ if $H(x) = H(x')$.
+		The choices available at information set $H$ can be written as		\[ C(H) = \{a \in A : a \in c(x) \text{ for } x \in H \}. \]
+	\item A function $\tau : \mathcal{H} \rightarrow \{0, 1, \dotsc, N \}$ assigning a player to each information set ($i = 0$ 'nature').
+		The collection of player $i$'s information set is denoted by $\mathcal{H}_i = \{H \in \mathcal{H} : i = \tau(H) \}$.
+	\item A function $\rho : \mathcal{H}_{0} \times \mathcal{A} \rightarrow [0, 1]$ assigning a probability to each action of nature with $ \rho (H,a) = 0$ if $a \notin C(H)$ and $\sum_{a \in C(H)} \rho(H,a) = 1$ for all $H \in \mathcal{H}_{0}$.
+	\item A collection of payoff functions $u = \{ u_{1}(\dotsc), \dotsc, u_{N} (\dotsc) \}$, where $u_{i} \colon T \rightarrow \mathds{R}$.
+\end{itemize}
+
+Now back to our example:
 
 \begin{example}[Ultimatum-Game]	\label{ultimatumgame} \index{Ultimatum-Game} 
 The Ultimatum-Game is a dynamic game under complete information. \\
-We look at two players in two stages. The first player (the proposer (P)) receives a sum of money $(M = 10)$ and proposes how to divide the sum between himself $(x_{p})$, where $x_{p} \in \{ 0, 1, 2, \dotsc, 10 \}$, and another player $(10 - x_{p})$. The second player (the responder (R)) chooses to either accept or reject this proposal. If the second player accepts, the money is split according to the proposal. If the second player reject, neither player receives any money.
+We look at two players in two stages. The first player, the proposer $P$ receives a sum of money $(M = 10)$ and proposes how to divide the sum between himself $(x_{p})$, where $x_{p} \in \{ 0, 1, 2, \dotsc, 10 \}$, and another player, the receiver $R$, who collects $(10 - x_{p})$. The responder chooses to either accept or reject this proposal. If $R$ accepts, the money is split according to the proposal. If the second player reject, neither player receives any money.
 
 Lets sum this up again:
 	\begin{itemize}
-		\item P proposes split up $(x_{p}, 10 - x_{p})$
-		\item R accepts or rejects
+		\item $P$ proposes split up $(x_{p}, 10 - x_{p})$
+		\item $R$ accepts or rejects
 			\begin{itemize}
-				\item If R accepts $(a)$, proposal becomes implemented. P receives $x_{p}$ and R $10 - x_{p}$
-				\item If R rejects $(r)$, the whole money gets destroyed.
+				\item If $R$ accepts $(a)$, proposal becomes implemented. $P$ receives $x_{p}$ and R $10 - x_{p}$
+				\item If $R$ rejects $(r)$, the payout for both players is $0$.
 			\end{itemize}
 	\end{itemize}
 	
@@ -50,13 +69,11 @@ Lets sum this up again:
 		\end{tikzpicture}				
 	\end{center}
 	
-	A strategy set in this game would have to look like
+	A strategy set in this game, as it needs to specify a complete action plan, would have to look similar to
 	\begin{itemize}
 		\item Proposer sets a $x_{p}$
 		\item Receiver decides for \textit{any} $x_{p}$ that might come up if he'd accept or reject that offer.
 	\end{itemize}
-	\begin{center}( a strategy needs to specify a complete action plan. ) \end{center}
-	
 	
 	\textbf{1. Question:} Can the outcome $(5, 5)$ be stabilised as a Nash-Equilibrium? \\
 	\textbf{Answer:} Yes. Say P proposes $x_{p} = 5$ and the strategy set for R is defined by accepting for any value of $x_{p} \leq 5$ and rejecting the offer for values larger than $5$. \\
@@ -70,7 +87,6 @@ Lets sum this up again:
 	\textbf{3. Question:} Can $(0, 10)$ be stabilised as a Nash-Equilibrium? \\
 	\textbf{Answer:} Yes. We set the strategy for P as $x_{p} = 0$ and for R demand accepting for $x_{p} = 0$ and rejecting for any other case, meaning for $x_{p} \geq 1$. 
 \end{example}
-
 As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes some of them even with implausible threats. We'd therefore like to refine this kind of equilibrium which leads us to the (sub-game) perfect Nash-Equilibrium.
 
 \begin{definition}[Sub-game] \index{sub-game}
@@ -85,24 +101,24 @@ As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes so
 
 \begin{definition}[(Sub-game-)Perfect Nash-Equilibrium] \index{Sub-game-Perfect Nash-Equilibrium} 
 A strategy profile is a Sub-game-Perfect Nash-Equilibrium if it represents a Nash equilibrium of every sub-game of the original game. Informally, this means that if the players played any smaller game that consisted of only one part of the larger game and their behaviour represents a Nash equilibrium of that smaller game, then their behaviour is a sub-game perfect equilibrium of the larger game. 
-
-	How to find a Perfect Nash-Equilibrium:
-	\begin{enumerate}
-		\item Define (one set of) optimal actions for the last sub-game
-		\item Replace that decision nodes with the respective outcome
-		\item Repeat $(1)$ and $(2)$ until the first decision node.
-	\end{enumerate}
 \end{definition}
+
+How to find a Perfect Nash-Equilibrium:
+\begin{enumerate}
+	\item Define (one set of) optimal actions for the last sub-game
+	\item Replace that decision nodes with the respective outcome
+	\item Repeat $(1)$ and $(2)$ until the initial decision node.
+\end{enumerate}
 
 \begin{example}[Sequel to the Ultimatum-Game]
 	Searching for the Perfect Nash-Equilibrium in this case leads to:
 	\begin{enumerate}
 		\item Defining the optimal actions
 			\begin{itemize}
-				\item In the case $P$ chooses $x_{p} = 10$, then $R$ receives  $10 - x_{p} = 0$ and he is 	indifferent between refusing and accepting. Let's assume for now he'd accept in this case.
-				\item In all other cases, meaning $x_{p} \in [0, 10)$, would R receive $10 - x_{p} > 0$. Therefore he would accept the offer in all cases.
+				\item In the case $P$ offering $0$ ($x_{p} = 10$), $R$ receives nothing and is therefore indifferent between refusing and accepting. Let's assume for now he'd accept.
+				\item For $x_{p} \in [0, 10)$ $R$ always has to accept the offer since $10 - x_{p} > 0$.
 			\end{itemize}
-		\item Now we can reduce the game to the following game tree
+		\item Assuming $R$ always accepts, we now can reduce the game to
 			\begin{center}
 				\begin{tikzpicture}[level/.style={sibling distance=25mm/#1}, level 	distance=25mm]
 					\node [circle,draw] (z){$P$}
@@ -119,18 +135,16 @@ A strategy profile is a Sub-game-Perfect Nash-Equilibrium if it represents a Nas
 					\path (e) -- (f) node [midway] {$\dotsc$};
 				\end{tikzpicture}				
 			\end{center}
-		\item Since we have already reached the first node, a simple analyse of the reduced situation for Nash-Equilibriums returns the Sub-Game-Perfect Nash-Equilibrium. In this situation $P$ is supposed to chose $x_{p} = 10$ since it results in the highest utility value.
+		\item A simple search in the reduced game tree for the strategy with the highest expected payoff for $P$ yields the Sub-Game-Perfect Nash-Equilibrium as we have reached the initial node.
 	\end{enumerate}
-	$\Rightarrow P$ playing $x_{p} = 10$ together with R always accepting constitutes a Sub-game-Perfect Nash-Equilibrium. 
+	$\Rightarrow P$ playing $x_{p} = 10$ together with $R$ always accepting constitutes a Sub-game-Perfect Nash-Equilibrium. 
 
-	If we look for another equilibrium it yields
-		\begin{enumerate}
-		\item the optimal actions
+	Now changing our assumption about player $R$'s decision in case of the offer $0$ leads to
 			\begin{itemize}
-				\item Again, in all cases $x_{p} \in [0, 10)$ would R receive $10 - x_{p} > 0$, therefore he'd accept the offer in all cases.
-				\item If he now would refuse to the offer $x_{p} = 10$ it would be plausible therefore sub-game perfect, since he indifferent between both choices.
+				\item Again, for $x_{p} \in [0, 10)$ $R$ receives $10 - x_{p} > 0$, therefore he'd have to accept the offer in these situations.
+				\item For the remaining offer $0$ ($x_{p} = 10$), it would be just as plausible to refuse the offer, since he is indifferent between both choices. Hence, accepting for $x_{p} \in [0, 10)$ and refusing for $x_{p} = 10$ is also a sub-game perfect strategy.
 			\end{itemize}
-		\item the tree changes only slightly:
+		 and even if the tree changes only slightly a different Sub-game-Perfect Nash-Equilibrium occurs:
 			\begin{center}
 				\begin{tikzpicture}[level/.style={sibling distance=25mm/#1}, level 	distance=25mm]
 					\node [circle,draw] (z){$P$}
@@ -147,8 +161,7 @@ A strategy profile is a Sub-game-Perfect Nash-Equilibrium if it represents a Nas
 					\path (e) -- (f) node [midway] {$\dotsc$};
 				\end{tikzpicture}				
 			\end{center}
-	\end{enumerate}
-	$\Rightarrow P$ playing $x_{p} = 9$ together with R always accepting if $x_{p} < 10$ and refuses for $x_{p} = 10$ also constitutes a Sub-game-Perfect Nash-Equilibrium. 
+	$\Rightarrow P$ playing $x_{p} = 9$ together with $R$ always accepting if $x_{p} < 10$ and refusing for $x_{p} = 10$ also constitutes a Sub-game-Perfect Nash-Equilibrium. 
 \end{example}
 
 

@@ -1,8 +1,8 @@
 %!TEX root = Economics and Behaviour.tex
 
-\section{Games in strategic form}
+\section{Strategic form}
 
-In this first section we will merely consider \begriff{static games} where all players choose their individual actions simultaneously (\textit{One-Shot games}). Yet, the term simultaneously is meant figuratively it is not important that all players act at the same but that at the time of their choice the decisions of all other players are unknown. \footnote{Experiments have shown that even if theoretically the decision process should be the same people tend to behave differently if they have knowledge about a decision order  (see Rapoport 1997, Guth, Huck und Rapoport 1998)}.
+In this first section we will merely consider \begriff{static games} where all players choose their individual actions simultaneously (\textit{One-Shot games}). Yet, the term simultaneously is meant figuratively. It is not important that all players act at the same but that at the time of their choice the decisions of all other players are unknown. \footnote{Experiments have shown that even if theoretically the decision process should be the same people tend to behave differently if they have knowledge about a decision order  (see Rapoport 1997, Guth, Huck und Rapoport 1998)}.
 
 In static games of complete, perfect information, a strategic form or normal-form representation of a game is a specification of players' strategy spaces and payoff functions. In this script we will focus on games with a finite number of players. \\
 
@@ -63,18 +63,43 @@ Now that we got to know an example for a game we should discuss some solution co
 
 Analysing \hyperref[prisonersdilemma]{Prisoner's Dilemma} one can see that $cooperate$ is strictly dominated by $defect$. Simply the elimination of strictly dominated strategies leads to the prediction that the players choose $(defects, defects)$ even though $(cooperates, cooperates)$ would result in a lower prison sentence. 
 
+This leads us to the elimination of irrational strategies:
 
-% todo eliminieren
+\begin{definition}[Best response]
+	The strategy $s_{i}$ is a \begriff{best response} for player $i$ to the opponents strategies $s_{-i}$ if
+	\[ u_{i}(s_{i}, s_{-i}) \geq u_{i}(s_{i}', s_{-i}) \text{ for all } s_{i}' \in S_{i} \]
+	A strategy $s_{i}$ is never a best response if there is no $s_{-i}$ for which $s_{i}$ is a best response.
+\end{definition}
+
+\begin{definition}[Rationalisable Strategies]
+	The strategies that survive the iterated elimination of strategies that are never a best response are know as player $i$'s rationalisable strategies.
+\end{definition}
+
+Iteratively eliminating dominated strategies leads to a set of rationalisable strategies; for example:
+
+	\begin{center}
+		\begin{tabular}{|r|r|r|r|}
+			\hline\hline  				P1 / P2 & \textbf{l} & \textbf{m} & \textbf{r} \\         			\cline{1-4}   				\textbf{u} & $(1, 1)$ & $(2, 2)$ & $(2, 0)$ \arrayrulewidth2pt \\            		\cline{1-4}   				\textbf{m} & $(2, 0)$ & $(0, 1)$ & $(1, 0)$ \arrayrulewidth2pt \\            		\cline{1-4}   				\textbf{d} & $(0, 2)$ & $(1, 1)$ & $(1, 1)$ \\			\hline\hline		\end{tabular}	
+	\end{center}
+	
+Here, an iterated elimination leads to $(u, m)$ as rationalisable strategies:
+\begin{itemize}
+	\item For Player 1 $d$ is strictly dominated by $u$ and should therefore never be played.
+	\item For Player 2 $r$ is strictly dominated by $m$.
+	\item Since Player 1 would never play $d$, $m$ dominates in the iterative subgame $l$
+	\item Now knowing Player 2 should play $m$, $u$ is the rational choice for Player 1
+\end{itemize} 	
 
 Important to notice is that here, the predictions we derived rely immensely on the rationality of all players.
 
-Since there is not a strictly dominant strategy in every situation we extend our solution concepts with the Nash-Equilibrium.
+Since there is not always a strictly dominant strategy we extend our solution concepts with the Nash-Equilibrium.
 
-\begin{definition}[Nash-Equilibrium] \label{nashequilibrium} % todo defini
-	An informal definition of a \begriff{Nash-Equilibrium} would be that it is the mutual best response for every player, therefore a set of strategies in which no player can do better by unilaterally changing their strategy. \\
-	Defining it formally would mean: a set of strategies $x^{*} \in S$ is a Nash-Equilibrium if no unilateral deviation in strategy by any single player is profitable for that player, that is
-	\[ \forall i \in \{1, \dotsc, N \},~ x_{i} \in S_{i} : \quad u_{i}(x_{i}^{*}, x_{-i}^{*}) \geq u_{i}(x_{i}, x_{-i}^{*}) \]
-	\end{definition}
+\begin{definition}[Nash-Equilibrium] \label{nashequilibrium} 
+A strategy set $s = (s_{1}, \dotsc, s_{N})$ constitutes a \begriff{Nash-Equilibrium} of a game if for every $i = 1, \dotsc, N$ where $N$ is the number of players
+	\[ u_{i}(s_{i}, s_{-i}) \geq u_{i}(s_{i}', s_{-i}) \text{ for all } s_{i}' \in S_{i} \]
+\end{definition}
+
+In other words, a \begriff{Nash-Equilibrium} is the mutual best response for every player, therefore a set of strategies in which no player can do better by unilaterally changing their strategy. \\
 
 \begin{example}[Battle of the sexes] \label{battleofthesexes} \index{Battle of sexes}
 		Image a couple that agreed to meet this evening, but both individually cannot recall if they will be attending the opera or a football match. The husband would most of all like to go to the football game. The wife would like to go to the opera. Both would prefer to go to the same place rather than different ones. \\ \\
@@ -88,13 +113,12 @@ Since there is not a strictly dominant strategy in every situation we extend our
 \end{example}
 
 \begin{example}[The Beauty-Contest] \index{Beauty-Contest} \label{Beauty-Contest}
-Keynes described the action of rational agents in a market using an analogy based on a fictional newspaper contest, in which entrants are asked to choose the six most attractive faces from a hundred photographs. Those who picked the most popular faces are then eligible for a prize. The agents has to consider that not his preferred choice is the optimal strategy but the one with the highest chances to be chosen by all others.
+John Keynes described the action of rational agents in a market using an analogy based on a fictional newspaper contest, in which entrants are asked to choose the six most attractive faces from a hundred photographs. Those who picked the most popular faces are then eligible for a prize. The agents has to consider that not his preferred choice is the optimal strategy but the one with the highest chances to be chosen by all others.
 \end{example}
 We can generalise this example to the following \\
 \begin{example}[Guessing-Game] \index{Guessing-Game} \label{Guessing-Game}
-	A game with at least two players in which the sequel can be described as following we call a Guessing-Game (e.g. the \hyperref[Beauty-Contest]{Beauty-Contest})
+	 A Guessing-Game (e.g. the \hyperref[Beauty-Contest]{Beauty-Contest}) is a game with at least two players in which the sequel can be described as follows:
 	\begin{itemize}
-		\item $n \geq 2$ players
 		\item Every player guesses a number $b_{i} \in \{0, 1, 2, \dotsc, 100 \}$
 		\item The player with the closest guess to $\frac{p}{n} \cdot \sum_{i = 1}^{n} b_{i} = p \cdot \varnothing, \quad p \in (0, 1)$ wins
 		\item In case of tie a random device that is 'fair' decides who win the price $P > 0$
@@ -123,7 +147,8 @@ We can generalise this example to the following \\
 
 	\textbf{3. Question:} Is $(0, \dotsc, 0)$ also a strictly dominant strategy? \\
 	\textbf{Answer:} No. Imagine following situation: \\
-	If $48$ of $50$ players bid the number $100$ and the $49$th bids $0$ then the best response for player $50$ is to bid $97$ (especially larger than 0). Therefore $0$ is not the best answer and cannot be a strictly dominant strategy.
+	If $48$ of $50$ players bid the number $100$ and the $49$th bids $0$ then the best response for player $50$ is to bid $97$ \footnote{$97$ is the closest whole number to $p \cdot \varnothing$}, which especially larger than 0 and therefore $0$ is not the best answer and cannot be a strictly dominant strategy.
 \end{example}
+
 
 \newpage
