@@ -17,8 +17,9 @@ Image two players, a proposer $P$ can split up 10 \euro ~ (up to \euro-level) be
 
 This simply example for a game we are now going to extend into a dynamic game with the addition that after the proposal the receiver can depending on the offer either accept or reject the proposal.
 
-An extensive form is suitable to model games like this and later we will find not far to seek why it usually has the form of a tree. The definition of a game in extensive form consists of:
-\begin{itemize} \index{extensive form}
+\begin{definition}[extensive form] \index{extensive form}
+	The extensive form is suitable to model games like this and later we will find not far to seek why it usually has the form of a tree. The definition of a game in extensive form consists of:
+\begin{itemize} 
 	\item A finite set of nodes $\mathcal{X}$, a finite set of possible actions $\mathcal{A}$ and a finite set of players ${1, \dotsc, N}$
 	\item A function $p \colon \mathcal{X} \rightarrow \{ \mathcal{X} \cup \emptyset \}$ specifying a single immediate predecessor of each node $x \in \mathcal{X}$; except for $x_{0}$ is the \begriff{initial node}. The immediate successor nodes of $x$ are $s(x) = p^{-1}(x)$. \\
 		To have a tree structure, a predecessor can never be a successor and vice versa. The set of \begriff{terminal nodes} is $T = \{ x \in \mathcal{X}: s(x) = \emptyset \}$. All other nodes $\mathcal{X} \setminus T$ are \begriff{decision nodes}.
@@ -32,6 +33,7 @@ An extensive form is suitable to model games like this and later we will find no
 	\item A function $\rho : \mathcal{H}_{0} \times \mathcal{A} \rightarrow [0, 1]$ assigning a probability to each action of nature with $ \rho (H,a) = 0$ if $a \notin C(H)$ and $\sum_{a \in C(H)} \rho(H,a) = 1$ for all $H \in \mathcal{H}_{0}$.
 	\item A collection of payoff functions $u = \{ u_{1}(\dotsc), \dotsc, u_{N} (\dotsc) \}$, where $u_{i} \colon T \rightarrow \mathds{R}$.
 \end{itemize}
+\end{definition}
 
 Now, back to our example:
 
