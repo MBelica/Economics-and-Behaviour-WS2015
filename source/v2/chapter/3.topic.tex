@@ -3,10 +3,10 @@
 
 \section{Extensive form}
 
-In game theoretic view the strategic and the extensive form are merely two different representations of the same strategic decision situation. But while the strategic form often only provides a static description of a game, the extensiv form provides additional properties like move order or level of information in a game.
+From a game-theoretic viewpoint, the strategic and the extensive form are merely two different representations of the same strategic decision situation. But while the strategic form often only provides a static description of a game, the extensive form provides additional properties like move order or level of information in a game.
 
-\begin{example}[Dictator-Game] \index{Dictator-Game}
-Image two players, a proposer $P$ can split up 10 \euro ~ (up to \euro-level) between him and a receiver $R$. 
+\begin{example}[Dictator-Game] \label{Dictator-Game} \index{Dictator-Game}
+Imagine two players, a proposer $P$ can split up 10 \euro ~ (up to \euro-level) between him and a receiver $R$. 
 	\begin{itemize}
 		\item Question 1: Assume for a minute $P$ is totally selfish and only cares about his own profits. Is there a strictly dominant strategy for $P$? \\
 			Yes! $(10, 0)$ (money proposer, money receiver) is strictly dominant.
@@ -17,12 +17,12 @@ Image two players, a proposer $P$ can split up 10 \euro ~ (up to \euro-level) be
 
 This simply example for a game we are now going to extend into a dynamic game with the addition that after the proposal the receiver can depending on the offer either accept or reject the proposal.
 
-\begin{definition}[extensive form] \index{extensive form}
-	The extensive form is suitable to model games like this and later we will find not far to seek why it usually has the form of a tree. The definition of a game in extensive form consists of:
-\begin{itemize} 
+\begin{definition}[extensive form]
+	A sequential game like the \hyperref[Dictator-Game]{Dictator-Game} is suitably modelled by an \begriff{extensive form} and we will later find out why it commonly has the shape of a tree. The definition of a game in extensive form consists of:
+\begin{itemize}  \index{node}
 	\item A finite set of nodes $\mathcal{X}$, a finite set of possible actions $\mathcal{A}$ and a finite set of players ${1, \dotsc, N}$
-	\item A function $p \colon \mathcal{X} \rightarrow \{ \mathcal{X} \cup \emptyset \}$ specifying a single immediate predecessor of each node $x \in \mathcal{X}$; except for $x_{0}$ is the \begriff{initial node}. The immediate successor nodes of $x$ are $s(x) = p^{-1}(x)$. \\
-		To have a tree structure, a predecessor can never be a successor and vice versa. The set of \begriff{terminal nodes} is $T = \{ x \in \mathcal{X}: s(x) = \emptyset \}$. All other nodes $\mathcal{X} \setminus T$ are \begriff{decision nodes}.
+	\item A function $p \colon \mathcal{X} \rightarrow \{ \mathcal{X} \cup \emptyset \}$ specifying a single immediate predecessor of each node $x \in \mathcal{X}$; except for $x_{0}$ which is the \begriff{initial node}. The immediate successor nodes of $x$ are $s(x) = p^{-1}(x)$. \\
+		To have a tree structure, a predecessor of x can never be a successor of x and vice versa. The set of \begriff{terminal nodes} is $T = \{ x \in \mathcal{X}: s(x) = \emptyset \}$. All other nodes $\mathcal{X} \setminus T$ are \begriff{decision nodes}.
 	\item A function $\alpha \colon \mathcal{X} \setminus \{ x_{0} \} \rightarrow \mathcal{A}$ giving the action that leads to any non-initial node $x$ from its immediate predecessor $p(x)$ with
 		\[ x', x'' \in s(x); x' \neq x'' \Rightarrow \alpha(x') \neq \alpha(x''). \]
 		The set of choices at decision node $x$ is $c(x) = \{ a \in \mathcal{A} : a = \alpha(x')$ for some $x' \in s(x) \}$
@@ -38,14 +38,14 @@ This simply example for a game we are now going to extend into a dynamic game wi
 Now, back to our example:
 
 \begin{example}[Ultimatum-Game]	\label{ultimatumgame} \index{Ultimatum-Game} 
-Given two players one of them, the proposer $P$, receives 10 \euro~and decides how to divide the sum between himself and another player, the receiver $R$;  where $P$ receives $x_{p}$ (with $x_{p} \in \{ 0, 1, 2, \dotsc, 10 \}$) and $R$ collects the remaining $10 - x_{p}$. After the proposer's decision the responder can either accept or reject this offer, if he accepts the money is split according to the proposal if he rejects neither player receives any money.
+Given two players, one of them, the proposer $P$, receives 10 \euro~and decides how to divide the sum between himself and another player, the receiver $R$;  where $P$ receives $x_{p}$ (with $x_{p} \in \{ 0, 1, 2, \dotsc, 10 \}$) and $R$ collects the remaining $10 - x_{p}$. After the proposer's decision the responder can either accept or reject this offer, if he accepts the money is split according to the proposal, if he rejects neither player receives any money.
 
 To sum it up:
 	\begin{itemize}
 		\item $P$ proposes split up $(x_{p}, 10 - x_{p})$
 		\item $R$ accepts or rejects
 			\begin{itemize}
-				\item If $R$ accepts $(a)$ proposal becomes implemented. $P$ receives $x_{p}$ and R $10 - x_{p}$
+				\item If $R$ accepts $(a)$ proposal becomes implemented, $P$ receives $x_{p}$ and R $10 - x_{p}$
 				\item If $R$ rejects $(r)$ the payout for both players is $0$.
 			\end{itemize}
 	\end{itemize}
@@ -70,25 +70,25 @@ To sum it up:
 		\end{tikzpicture}				
 	\end{center}
 	
-	A strategy set in this game, as it needs to specify a complete action plan, would have to look similar to
+	A strategy set in this game, as it needs to specify a complete plan of actions, should be similar to
 	\begin{itemize}
-		\item Proposer sets a $x_{p}$
-		\item Receiver decides for \textit{any} $x_{p}$ that might come up if he'd accept or reject that offer.
+		\item Proposer sets an $x_{p}$
+		\item Receiver decides for \textit{any} $x_{p}$ that might come up as an offer if he'd accept or reject it.
 	\end{itemize}
 	
 	\textbf{1. Question:} Can the outcome $(5, 5)$ be stabilised as a Nash-Equilibrium? \\
-	\textbf{Answer:} Yes. Say P proposes $x_{p} = 5$ and the strategy set for R is defined by accepting for any value of $x_{p} \leq 5$ and rejecting the offer for values larger than $5$. \\
-		In this situation $(5, 5)$ would be stabilised as a Nash-Equilibrium.
+	\textbf{Answer:} Yes. Let's say P proposes $x_{p} = 5$ and the strategy set for R is defined by accepting any value of $x_{p} \leq 5$ and rejecting the offer for values larger than $5$. \\
+		In this situation $(5, 5)$ would state a Nash-Equilibrium.
 
 
 	\textbf{2. Question:} Is there another Nash-Equilibrium that stabilises the $(5, 5)$ outcome? \\
-	\textbf{Answer:} Yes. If P again proposes $x_{p} = 5$ and the strategy set for R is defined by accepting for only $x_{p} = 5$ and rejecting for any other case, so $x_{p} \neq 5$. 
+	\textbf{Answer:} Yes. If P proposes $x_{p} = 5$ again and  R accepts the offer only for $x_{p} = 5$, therefore he'd reject for any other case ($x_{p} \neq 5$). 
 	
 	
 	\textbf{3. Question:} Can $(0, 10)$ be stabilised as a Nash-Equilibrium? \\
-	\textbf{Answer:} Yes. We set the strategy for P as $x_{p} = 0$ and for R demand accepting for $x_{p} = 0$ and rejecting for any other case, meaning for $x_{p} \geq 1$. 
+	\textbf{Answer:} Yes. We set for P the proposal to $x_{p} = 0$ and define R's strategy set as accepting for $x_{p} = 0$ and rejecting for any other case, meaning for $x_{p} \geq 1$. 
 \end{example}
-As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes some of them even with implausible threats. We'd therefore like to refine this kind of equilibrium which leads us to the (sub-game) perfect Nash-Equilibrium.
+As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes some of them even with implausible threats. As this seems unsatisfying we'd therefore like to refine once again our set of equilibria which leads us to the (sub-game) perfect Nash-Equilibrium:
 
 \begin{definition}[Sub-game] \index{sub-game}
 	A sub-game is any part of a game that meets the following criteria:
@@ -103,7 +103,6 @@ As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes so
 \begin{definition}[(Sub-game-)Perfect Nash-Equilibrium] \index{Sub-game-Perfect Nash-Equilibrium} 
 A strategy profile is a Sub-game-Perfect Nash-Equilibrium if it represents a Nash equilibrium of every sub-game of the original game. Informally, this means that if the players played any smaller game that consisted of only one part of the larger game and their behaviour represents a Nash equilibrium of that smaller game, then their behaviour is a sub-game perfect equilibrium of the larger game. 
 \end{definition}
-
 How to find a Perfect Nash-Equilibrium:
 \begin{enumerate}
 	\item Define (one set of) optimal actions for the last sub-game
@@ -116,10 +115,10 @@ How to find a Perfect Nash-Equilibrium:
 	\begin{enumerate}
 		\item Defining the optimal actions
 			\begin{itemize}
-				\item In the case $P$ offering $0$ ($x_{p} = 10$), $R$ receives nothing and is therefore indifferent between refusing and accepting. Let's assume for now he'd accept.
+				\item In the case of $P$ offering $0$ ($x_{p} = 10$), $R$ receives nothing and is therefore indifferent between refusing and accepting. Let's assume for now he'd accept.
 				\item For $x_{p} \in [0, 10)$ $R$ always has to accept the offer since $10 - x_{p} > 0$.
 			\end{itemize}
-		\item Assuming $R$ always accepts, we now can reduce the game to
+		\item Assuming $R$ always accepts, we now can reduce the game
 			\begin{center}
 				\begin{tikzpicture}[level/.style={sibling distance=25mm/#1}, level 	distance=25mm]
 					\node [circle,draw] (z){$P$}
@@ -136,16 +135,16 @@ How to find a Perfect Nash-Equilibrium:
 					\path (e) -- (f) node [midway] {$\dotsc$};
 				\end{tikzpicture}				
 			\end{center}
-		\item A simple search in the reduced game tree for the strategy with the highest expected payoff for $P$ yields the Sub-Game-Perfect Nash-Equilibrium as we have reached the initial node.
+		\item A simple search in this reduced game tree for the strategy with the highest expected payoff for $P$ yields the Sub-Game-Perfect Nash-Equilibrium as we have already reached the initial node.
 	\end{enumerate}
 	$\Rightarrow P$ playing $x_{p} = 10$ together with $R$ always accepting constitutes a Sub-game-Perfect Nash-Equilibrium. 
 
-	Now changing our assumption about player $R$'s decision in case of the offer $0$ leads to
+	Now changing our initial assumption about $R$'s decision in case of an $x_{p} = 0$ offer causes (even if the game tree changes only slightly) a different Sub-game-Perfect Nash-Equilibrium
 			\begin{itemize}
 				\item Again, for $x_{p} \in [0, 10)$ $R$ receives $10 - x_{p} > 0$, therefore he'd have to accept the offer in these situations.
 				\item For the remaining offer $0$ ($x_{p} = 10$), it would be just as plausible to refuse the offer, since he is indifferent between both choices. Hence, accepting for $x_{p} \in [0, 10)$ and refusing for $x_{p} = 10$ is also a sub-game perfect strategy.
 			\end{itemize}
-		 and even if the tree changes only slightly a different Sub-game-Perfect Nash-Equilibrium occurs:
+		 Our reduced game tree looks now like this:
 			\begin{center}
 				\begin{tikzpicture}[level/.style={sibling distance=25mm/#1}, level 	distance=25mm]
 					\node [circle,draw] (z){$P$}

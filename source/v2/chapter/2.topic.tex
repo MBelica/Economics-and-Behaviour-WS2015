@@ -2,9 +2,9 @@
 
 \section{Strategic form}
 
-In this first section we will merely consider \begriff{static games} where all players choose their individual actions simultaneously (see One-Shot games). Yet, the term simultaneously is meant figuratively. It is not important that all players act at the same but that at the time of their choice the decisions of all other players are unknown. \footnote{Experiments have shown that even if theoretically the decision process should be the same people tend to behave differently if they have knowledge about a decision order  (see Rapoport 1997, Guth, Huck und Rapoport 1998)}.
+In this first section we will merely consider \begriff{static games} where all players choose their individual actions simultaneously (see One-Shot games). Yet, the term simultaneously is meant figuratively. It is not important that all players act at the same time but that at the time of their choice the decisions of all other players are unknown\footnote{Experiments have shown that even if theoretically the decision process should be the same people tend to behave differently if they have knowledge about a decision order  (see Rapoport 1997, Guth, Huck und Rapoport 1998)}.
 
-In static games of complete, perfect information, a strategic form or normal-form representation of a game is a specification of players' strategy spaces and payoff functions. In this script we will focus on games with a finite number of players. \\
+In static games of complete, perfect information, a strategic form or normal-form representation of a game is a specification of players' strategy spaces and payoff functions. \\
 
 First let's take a look at the definition of a strategy, which we will then use to define the strategic form of games: 
 
@@ -18,7 +18,7 @@ We call a set of strategies a \begriff{complete plan} of actions for each situat
 \begin{definition}[Strategic form representation]
 To be fully defined a game in \begriff{strategic form} must specify the set $\{ N, S, u \}$ where
 	\begin{enumerate}
-		\item $N$ is the finite number of players and for player $i$ would that mean $i \in \{ 1, \dotsc, N \}$.
+		\item $N$ is the finite number of players and for player $i$ that would mean $i \in \{ 1, \dotsc, N \}$.
 		\item For each player $i$ we have a set of strategies $S_{i}$, such that $S = \bigotimes S_{i}$.
 		\item For each player $i$ we have an expected utility function $u_{i} : S \rightarrow \MdR$, such that $u = \{ u_{1}, \dotsc, u_{N} \}$.
 	\end{enumerate}
@@ -26,14 +26,14 @@ To be fully defined a game in \begriff{strategic form} must specify the set $\{ 
 
 
 
-To visualise a static game with two players ($P1$ and $P2$) and a finite number of possible strategies (for simplicity lets assume that there are only two signals and call them $a$ and $b$) one commonly uses the \begriff{matrix form}, where $u_{i}(x, y)$ represents the utility function for player $i$ given the strategy $x$ for $P1$ and $y$ for $P2$ with $x, y \in \{ a, b\}$.
+To visualise a static game with two players ($P1$ and $P2$) and a finite number of possible strategies (for simplicity let's assume that there are only two signals and call them $a$ and $b$) one commonly uses the \begriff{matrix form}, where $u_{i}(x, y)$ represents the utility function for player $i$ given the strategy $x$ for $P1$ and $y$ for $P2$ with $x, y \in \{ a, b\}$.
 \begin{center}
 	\begin{tabular}{|c|c|c|}
 		\hline\hline  			$P1$ / $P2$ & \textbf{a} & \textbf{b} \\         		\cline{1-3}   					\textbf{a} & $( u_{1}(a, a) , u_{2}(a, a))$ & $(u_{1}(a, b), u_{2}(a, b))$	\arrayrulewidth2pt \\            	\cline{1-3}   					\textbf{b} & $( u_{1}(b, a), u_{2}(b, a))$ & $(u_{1}(b, b), u_{2}(b, b))$\\ \hline\hline	\end{tabular}	
 \end{center}
 
 \begin{example}[Prisoner's Dilemma] \label{prisonersdilemma} \index{Prisoner's Dilemma}
-	 Image, two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge. They hope to get both sentenced to a year in prison on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity either to: betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent. The offer is:
+	 Imagine, two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge. They hope to get both sentenced to a year in prison on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity either to: betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent. The offer is:
 	\begin{itemize}
 		\item If A and B betray each other, each of them serves 6 years in prison
 		\item If A betrays B but B remains silent, A will be set free and B will serve 9 years in prison (and vice versa)
@@ -66,13 +66,13 @@ Analysing \hyperref[prisonersdilemma]{Prisoner's Dilemma} one can see that $coop
 This leads us to the elimination of irrational strategies:
 
 \begin{definition}[Best response]
-	The strategy $s_{i}$ is a \begriff{best response} for player $i$ to the opponents strategies $s_{-i}$ if
+	The strategy $s_{i}$ is a \begriff{best response} for player $i$ to the opponent's strategies $s_{-i}$ if
 	\[ u_{i}(s_{i}, s_{-i}) \geq u_{i}(s_{i}', s_{-i}) \text{ for all } s_{i}' \in S_{i} \]
 	A strategy $s_{i}$ is never a best response if there is no $s_{-i}$ for which $s_{i}$ is a best response.
 \end{definition}
 
 \begin{definition}[Rationalisable Strategies]
-	The strategies that survive the iterated elimination of strategies that are never a best response are know as player $i$'s rationalisable strategies.
+	The strategies that survive the iterated elimination of strategies that are never a best response are known as player $i$'s \index{rationalisable strategies}.
 \end{definition}
 
 Iteratively eliminating dominated strategies leads to a set of rationalisable strategies; for example:
@@ -102,8 +102,8 @@ A strategy set $s = (s_{1}, \dotsc, s_{N})$ constitutes a \begriff{Nash-Equilibr
 In other words, a \begriff{Nash-Equilibrium} is the mutual best response for every player, therefore a set of strategies in which no player can do better by unilaterally changing their strategy. \\
 
 \begin{example}[Battle of the sexes] \label{battleofthesexes} \index{Battle of sexes}
-		Image a couple that agreed to meet this evening, but both individually cannot recall if they will be attending the opera or a football match. The husband would most of all like to go to the football game. The wife would like to go to the opera. Both would prefer to go to the same place rather than different ones. \\ \\
-		Hence, the Battle of sexes in strategic form could, of course depending on their utility function, look something like:
+		Imagine a couple that agreed to meet this evening, but both individually cannot recall if they will be attending the opera or a football match. The husband would most of all like to go to the football game. The wife would like to go to the opera. Both would prefer to go to the same place rather than different ones. \\ \\
+		Hence, the Battle of the sexes in strategic form could, of course depending on their utility function, look something like:
 		\begin{center}
 			\begin{tabular}{|l|l|r|}
 				\hline\hline  					M / F & \textbf{football} & \textbf{opera} \\         				\cline{1-3}   					\textbf{football} & $(1, 2)$ & $(0, 0)$ 	\arrayrulewidth2pt \\            			\cline{1-3}   					\textbf{opera} & $(0, 0)$ & $(2, 1)$ \\ \hline\hline			\end{tabular}	
@@ -113,7 +113,7 @@ In other words, a \begriff{Nash-Equilibrium} is the mutual best response for eve
 \end{example}
 
 \begin{example}[The Beauty-Contest] \index{Beauty-Contest} \label{Beauty-Contest}
-John Keynes described the action of rational agents in a market using an analogy based on a fictional newspaper contest, in which entrants are asked to choose the six most attractive faces from a hundred photographs. Those who picked the most popular faces are then eligible for a prize. The agents has to consider that not his preferred choice is the optimal strategy but the one with the highest chances to be chosen by all others.
+John Keynes described the action of rational agents in a market using an analogy based on a fictional newspaper contest, in which entrants are asked to choose the six most attractive faces from a hundred photographs. Those who picked the most popular faces are then eligible for a prize. An agent has to consider that not his preferred choice is the optimal strategy but the one with the highest chances to be chosen by all others.
 \end{example}
 We can generalise this example to the following \\
 \begin{example}[Guessing-Game] \index{Guessing-Game} \label{Guessing-Game}
@@ -121,11 +121,11 @@ We can generalise this example to the following \\
 	\begin{itemize}
 		\item Every player guesses a number $b_{i} \in \{0, 1, 2, \dotsc, 100 \}$
 		\item The player with the closest guess to $\frac{p}{n} \cdot \sum_{i = 1}^{n} b_{i} = p \cdot \varnothing, \quad p \in (0, 1)$ wins
-		\item In case of tie a random device that is 'fair' decides who win the price $P > 0$
+		\item In case of tie a random device that is 'fair' decides who wins the prize $P > 0$
 	\end{itemize}
 	Assume now $p < 1$. \\
 	\textbf{1. Question:} Is $(0, \dotsc, 0)$ a Nash-Equilibrium? \\
-	\textbf{Answer:} Yes. Assume player $i$ bids $b > 0$ and all other bid $0$.	
+	\textbf{Answer:} Yes. Assume player $i$ bids $b > 0$ and all others bid $0$.	
 		\begin{itemize}
 			\item if bidder $i$ bids $0$ expected win equals $\frac{1}{n} P $
 			\item we can rewrite $p$ times the mean with	
@@ -147,7 +147,7 @@ We can generalise this example to the following \\
 
 	\textbf{3. Question:} Is $(0, \dotsc, 0)$ also a strictly dominant strategy? \\
 	\textbf{Answer:} No. Imagine following situation: \\
-	If $48$ of $50$ players bid the number $100$ and the $49$th bids $0$ then the best response for player $50$ is to bid $97$ \footnote{$97$ is the closest whole number to $p \cdot \varnothing$}, which especially larger than 0 and therefore $0$ is not the best answer and cannot be a strictly dominant strategy.
+	If $48$ of $50$ players bid the number $100$ and the $49$th bids $0$ then the best response for player $50$ is to bid $97$ \footnote{$97$ is the closest whole number to $p \cdot \varnothing$}, which is much larger than 0, and therefore $0$ is not the best answer and cannot be a strictly dominant strategy.
 \end{example}
 
 
