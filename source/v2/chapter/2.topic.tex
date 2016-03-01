@@ -120,17 +120,16 @@ We can generalise this example to the following \\
 	 A Guessing-Game (e.g. the \hyperref[Beauty-Contest]{Beauty-Contest}) is a game with at least two players in which the sequel can be described as follows:
 	\begin{itemize}
 		\item Every player guesses a number $b_{i} \in \{0, 1, 2, \dotsc, 100 \}$
-		\item The player with the closest guess to $\frac{p}{n} \cdot \sum_{i = 1}^{n} b_{i} = p \cdot \varnothing, \quad p \in (0, 1)$ wins
+		\item The player with the closest guess to $p \cdot \sum_{i = 1}^{n} \frac{b_{i}}{n} = p \cdot \varnothing$ with $p \in (0, 1)$ wins
 		\item In case of tie a random device that is 'fair' decides who wins the prize $P > 0$
 	\end{itemize}
-	Assume now $p < 1$. \\
 	\textbf{1. Question:} Is $(0, \dotsc, 0)$ a Nash-Equilibrium? \\
 	\textbf{Answer:} Yes. Assume player $i$ bids $b > 0$ and all others bid $0$.	
 		\begin{itemize}
 			\item if bidder $i$ bids $0$ expected win equals $\frac{1}{n} P $
 			\item we can rewrite $p$ times the mean with	
-				\[ p \cdot \varnothing = p \cdot \frac{(n - 1)0 + 1 b}{n} = p \cdot \frac{b}{n} \]
-			his expected profit is $0$, as $0$ is closer to $p \cdot \varnothing$ then the bet $b > 0$, since
+				\[ p \cdot \varnothing = p \cdot \frac{(n - 1)0 + 1 b}{n} = p \cdot \frac{b}{n}. \]
+			Then, his expected profit is $0$, as $0$ is closer to $p \cdot \varnothing$ then the bet $b > 0$, since
 			\[ \left| b - p \cdot \frac{b}{n} \right| =  \left|(n-p) \cdot \frac{b}{n} \right| \overset{\substack{p < 1, \\ n \geq 2}}{>} \left| p \cdot \frac{b}{n} \right| = \left| 0 - p \cdot \frac{b}{n} \right| \]
 		\end{itemize}
 	
