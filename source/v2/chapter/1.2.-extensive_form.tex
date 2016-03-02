@@ -82,32 +82,32 @@ To sum it up:
 
 
 	\textbf{2. Question:} Is there another Nash-Equilibrium that stabilises the $(5, 5)$ outcome? \\
-	\textbf{Answer:} Yes. If P proposes $x_{p} = 5$ again and  R accepts the offer only for $x_{p} = 5$, therefore he'd reject for any other case ($x_{p} \neq 5$). 
+	\textbf{Answer:} Yes. If P proposes $x_{p} = 5$ and R now accepts the offer only for $x_{p} = 5$, he'd therefore reject any other case ($x_{p} \neq 5$). 
 	
 	
 	\textbf{3. Question:} Can $(0, 10)$ be stabilised as a Nash-Equilibrium? \\
-	\textbf{Answer:} Yes. We set for P the proposal to $x_{p} = 0$ and define R's strategy set as accepting for $x_{p} = 0$ and rejecting for any other case, meaning for $x_{p} \geq 1$. 
+	\textbf{Answer:} Yes. We set for P the proposal to $x_{p} = 0$ and define R's strategy set as accepting for $x_{p} = 0$, and rejecting for any other case ($x_{p} \geq 1$). 
 \end{example}
-As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes some of them even with implausible threats. As this seems unsatisfying we'd therefore like to refine once again our set of equilibria which leads us to the (sub-game) perfect Nash-Equilibrium:
+As we can see the Nash-Equilibrium can lead to an infinite amount of outcomes some of them even with implausible threats. As this seems unsatisfying we'd therefore like to refine once again our set of equilibria which leads us to the (subgame) perfect Nash-Equilibrium:
 
-\begin{definition}[Sub-game] \index{sub-game}
-	A sub-game is any part of a game that meets the following criteria:
+\begin{definition}[Subgame] \index{subgame}
+	A subgame is any part of a game that meets the following criteria:
 	\begin{itemize}
 		\item It has a single initial node that is the only member of that node's information set (i.e. the initial node is in a singleton information set).
-		\item If a node is contained in the sub-game then so are all of its successors
-		\item If a node in a particular information set is in the sub-game then all members of that information set belong to the sub-game.
+		\item If a node is contained in the subgame then so are all of its successors
+		\item If a node in a particular information set is in the subgame then all members of that information set belong to the subgame.
 		\item and finally the node must not contain a deterministic state but instead at least one non-trivial choice
 	\end{itemize}
 \end{definition}
 
-\begin{definition}[(Sub-game-)Perfect Nash-Equilibrium] \index{Sub-game-Perfect Nash-Equilibrium} 
-A strategy profile is a Sub-game-Perfect Nash-Equilibrium if it represents a Nash equilibrium of every sub-game of the original game. Informally, this means that if the players played any smaller game that consisted of only one part of the larger game and their behaviour represents a Nash equilibrium of that smaller game, then their behaviour is a sub-game perfect equilibrium of the larger game. 
+\begin{definition}[(Subgame) Perfect Nash-Equilibrium] \index{subgame perfect Nash-Equilibrium} 
+A strategy profile is a subgame perfect Nash-Equilibrium if it represents a Nash equilibrium of every subgame of the original game. Informally, this means that if the players played any smaller game that consisted of only one part of the larger game and their behaviour represents a Nash equilibrium of that smaller game, then their behaviour is a subgame perfect equilibrium of the larger game. 
 \end{definition}
 How to find a Perfect Nash-Equilibrium:
 \begin{enumerate}
-	\item Define (one set of) optimal actions for the last sub-game
+	\item Define (one set of) optimal actions for the last subgame
 	\item Replace that decision nodes with the respective outcome
-	\item Repeat $(1)$ and $(2)$ until the initial decision node.
+	\item Repeat $(1)$ and $(2)$ until the initial decision node is reached.
 \end{enumerate}
 
 \begin{example}[Sequel to the Ultimatum-Game]
@@ -135,14 +135,14 @@ How to find a Perfect Nash-Equilibrium:
 					\path (e) -- (f) node [midway] {$\dotsc$};
 				\end{tikzpicture}				
 			\end{center}
-		\item A simple search in this reduced game tree for the strategy with the highest expected payoff for $P$ yields the Sub-Game-Perfect Nash-Equilibrium as we have already reached the initial node.
+		\item A simple search in this reduced game tree for the strategy with the highest expected payoff for $P$ yields the subgame perfect Nash-Equilibrium as we have already reached the initial node.
 	\end{enumerate}
-	$\Rightarrow P$ playing $x_{p} = 10$ together with $R$ always accepting constitutes a Sub-game-Perfect Nash-Equilibrium. 
+	$\Rightarrow P$ playing $x_{p} = 10$ together with $R$ always accepting constitutes a subgame perfect Nash-Equilibrium. 
 
-	Now changing our initial assumption about $R$'s decision in case of an $x_{p} = 0$ offer causes (even if the game tree changes only slightly) a different Sub-game-Perfect Nash-Equilibrium
+	Now changing our initial assumption about $R$'s decision in case of an $x_{p} = 0$ offer causes (even if the game tree changes only slightly) a different subgame perfect Nash-Equilibrium
 			\begin{itemize}
 				\item Again, for $x_{p} \in [0, 10)$ $R$ receives $10 - x_{p} > 0$, therefore he'd have to accept the offer in these situations.
-				\item For the remaining offer $0$ ($x_{p} = 10$), it would be just as plausible to refuse the offer, since he is indifferent between both choices. Hence, accepting for $x_{p} \in [0, 10)$ and refusing for $x_{p} = 10$ is also a sub-game perfect strategy.
+				\item For the remaining offer $0$ ($x_{p} = 10$), it would be just as plausible to refuse the offer, since he is indifferent between both choices. Hence, accepting for $x_{p} \in [0, 10)$ and refusing for $x_{p} = 10$ is also a subgame perfect strategy.
 			\end{itemize}
 		 Our reduced game tree looks now like this:
 			\begin{center}
@@ -161,7 +161,7 @@ How to find a Perfect Nash-Equilibrium:
 					\path (e) -- (f) node [midway] {$\dotsc$};
 				\end{tikzpicture}				
 			\end{center}
-	$\Rightarrow P$ playing $x_{p} = 9$ together with $R$ always accepting if $x_{p} < 10$ and refusing for $x_{p} = 10$ also constitutes a Sub-game-Perfect Nash-Equilibrium. 
+	$\Rightarrow P$ playing $x_{p} = 9$ together with $R$ always accepting if $x_{p} < 10$ and refusing for $x_{p} = 10$ also constitutes a subgame perfect Nash-Equilibrium. 
 \end{example}
 
 
