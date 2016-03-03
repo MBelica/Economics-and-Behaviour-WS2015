@@ -134,19 +134,21 @@ We can generalise this example to the following \\
 		\end{itemize}
 	
 	\textbf{2. Question:} Is $(0, \dotsc, 0)$ the unique Nash-Equilibrium here? \\
-	\textbf{Answer:} Yes, since:	
-	\[ b_{i}^{*} \leq \frac{1}{2} \frac{\sum_{j \neq i} b_{j}^{*}}{n - 1} \]
-	\begin{align*}
-		\Rightarrow \sum_{i = 1}^{n} b_{i}^{*} \leq \frac{1}{2} \frac{\sum_{i = 1}^{n} \sum_{j \neq i} b_{j}^{*}}{n - 1} & = \frac{1}{2} \frac{(n - 1) \sum_{j = 1}^{n} b_{j}^{*}}{n - 1} \\
-		& = \frac{1}{2} \sum_{j = 1}^{n} b_{j}^{*}
-	\end{align*} 
-	\[ \gdw \sum_{i = 1}^{n} b_{i}^{*} \leq \frac{1}{2} \sum_{i = 1}^{n} b_{i}^{*} \]
-	therefore only $(0, \dotsc,  0)$ can be a Nash-Equilibrium in this situation. \\
-
+	\textbf{Answer:} Yes, and to bring this to proof we take a look at player $i$'s optimal strategy $b_{i}^{*}$ given the optimal responses of all others:
+	
+	First, as a consequence our proof of the 1. Question the optimal strategy $b_{i}^{*}$ has to be smaller or equal to the others' winning number: $b_{i}^{*} \leq p \cdot \frac{\sum_{j \neq i} b_{j}^{*}}{n - 1}$.
+	
+	Considering all players, in terms of summing up over all $i$, yields then
+	\[ \sum_{i = 1}^{n} b_{i}^{*} \leq p \cdot \frac{\sum_{i = 1}^{n} \sum_{j \neq i} b_{j}^{*}}{n - 1} = p \cdot \frac{(n - 1) \sum_{j = 1}^{n} b_{j}^{*}}{n - 1} = p \cdot \sum_{j = 1}^{n} b_{j}^{*}. \]
+	Thus
+		\[ \sum_{i = 1}^{n} b_{i}^{*} \leq p \cdot \sum_{i = 1}^{n} b_{i}^{*}, \quad p \in (0, 1) \]
+	has to hold true and with that $b_{i}^{*} = 0$ for all $i$.
+	
+	Now that a Nash-Equilibrium consists of the mutual best responses only $(0, \dotsc,  0)$ can be a Nash-Equilibrium in this situation. \\
 
 	\textbf{3. Question:} Is $(0, \dotsc, 0)$ also a strictly dominant strategy? \\
 	\textbf{Answer:} No. Imagine following situation: \\
-	If $48$ of $50$ players bid the number $100$ and the $49$th bids $0$ then the best response for player $50$ is to bid $97$ \footnote{$97$ is the closest whole number to $p \cdot \varnothing$}, which is much larger than 0, and therefore $0$ is not the best answer and cannot be a strictly dominant strategy.
+	If $48$ of $50$ players bid the number $100$ and the $49$th bids $0$ then the best response for player $50$ is to bid $97$ \footnote{$97$ is the closest whole number to $p \cdot \varnothing$}, which is much larger than 0, so $0$ is not the best answer and therefore cannot be a strictly dominant strategy.
 \end{example}
 
 
