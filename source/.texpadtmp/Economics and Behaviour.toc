@@ -1,28 +1,28 @@
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Introduction to behavioural and experimental economics}{4}{chapter.4}
-\contentsline {section}{\numberline {1.1}Homo oeconomicus and the representation of games}{4}{section.8}
-\contentsline {section}{\numberline {1.2}Experimental economics}{6}{section.15}
-\contentsline {chapter}{\numberline {2}Standard theoretic basics for analysis of strategic behaviour}{7}{chapter.16}
-\contentsline {section}{\numberline {2.1}Games in strategic form}{7}{section.17}
-\contentsline {subsection}{\numberline {2.1.1}Dominant strategies}{8}{subsection.19}
-\contentsline {subsection}{\numberline {2.1.2}Nash-Equilibrium}{8}{subsection.22}
-\contentsline {subsection}{\numberline {2.1.3}Sub-game-Perfect Nash-Equilibrium}{9}{subsection.27}
-\contentsline {chapter}{\numberline {3}An ultimatum game with multidimensional response strategies}{14}{chapter.42}
-\contentsline {section}{\numberline {3.1}Presented papers}{14}{section.43}
-\contentsline {chapter}{\numberline {4}Cooling Off in Negotiations: Does It Work?}{15}{chapter.44}
-\contentsline {section}{\numberline {4.1}Presented papers}{15}{section.45}
-\contentsline {chapter}{\numberline {5}Level k as a prominent example of a nonstandard/behavioural approach}{16}{chapter.46}
-\contentsline {section}{\numberline {5.1}Presented papers}{16}{section.47}
-\contentsline {chapter}{\numberline {6}Organisations and Markets:}{17}{chapter.48}
-\contentsline {section}{\numberline {6.1}The role of market incentives}{17}{section.49}
-\contentsline {subsection}{\numberline {6.1.1}Presented papers}{17}{subsection.50}
-\contentsline {section}{\numberline {6.2}The role of moral dimensions of markets and organisations}{19}{section.51}
-\contentsline {subsection}{\numberline {6.2.1}Presented papers}{19}{subsection.52}
-\contentsline {chapter}{\numberline {7}Ethics in science}{21}{chapter.53}
-\contentsline {section}{\numberline {7.1}Pleasures of Skill and Moral Conduct}{21}{section.54}
-\contentsline {section}{\numberline {7.2}Moral and Markets}{21}{section.55}
-\contentsline {section}{\numberline {7.3}Presented papers}{22}{section.56}
-\contentsline {chapter}{\numberline {8}Non-standard utility}{23}{chapter.57}
-\contentsline {section}{\numberline {8.1}Anticipatory utility}{23}{section.58}
-\contentsline {section}{\numberline {8.2}Presented papers}{24}{section.59}
-\contentsline {chapter}{Index}{27}{section*.61}
+\contentsline {chapter}{Introduction}{4}{chapter*.6}
+\contentsline {chapter}{\numberline {1}Standard theoretic basics for analysis of strategic behaviour}{5}{chapter.7}
+\contentsline {section}{\numberline {1.1}Strategic form}{6}{section.11}
+\contentsline {section}{\numberline {1.2}Extensive form}{10}{section.27}
+\contentsline {chapter}{\numberline {2}How strategic interdependence can change subjective decisions}{14}{chapter.40}
+\contentsline {section}{\numberline {2.1}An ultimatum game with multidimensional response strategies}{14}{section.41}
+\contentsline {section}{\numberline {2.2}Cooling Off in Negotiations: Does It Work?}{14}{section.42}
+\contentsline {section}{\numberline {2.3}Level k as a prominent example of a nonstandard/behavioural approach}{14}{section.43}
+\contentsline {chapter}{\numberline {3}Organisations and Markets: The role of market incentives}{16}{chapter.44}
+\contentsline {section}{\numberline {3.1}Pay Enough or Don't Pay at All}{16}{section.45}
+\contentsline {section}{\numberline {3.2}A Fine is a Prise}{16}{section.46}
+\contentsline {section}{\numberline {3.3}The Currency or Reciprocity}{16}{section.47}
+\contentsline {section}{\numberline {3.4}Creativity and Financial Incentives}{17}{section.48}
+\contentsline {chapter}{\numberline {4}Organisations and Markets: The role of moral dimensions of markets}{18}{chapter.49}
+\contentsline {section}{\numberline {4.1}Morals and Markets}{18}{section.50}
+\contentsline {section}{\numberline {4.2}You Owe Me}{19}{section.51}
+\contentsline {section}{\numberline {4.3}How Customers' insurance coverage induces sellers' misbehaviour}{19}{section.52}
+\contentsline {chapter}{\numberline {5}Ethics in science}{21}{chapter.53}
+\contentsline {section}{\numberline {5.1}Pleasures of Skill and Moral Conduct}{21}{section.54}
+\contentsline {section}{\numberline {5.2}The Social Responsibilities of Scientists}{22}{section.55}
+\contentsline {section}{\numberline {5.3}The Moral UnNeutrality of Science}{22}{section.56}
+\contentsline {chapter}{\numberline {6}Non-standard utility}{23}{chapter.57}
+\contentsline {section}{\numberline {6.1}Paying Not to Go to the Gym}{24}{section.59}
+\contentsline {section}{\numberline {6.2}The Challenge of Mountaineering}{24}{section.60}
+\contentsline {section}{\numberline {6.3}Fantasy and Dread}{25}{section.61}
+\contentsline {chapter}{Exams}{26}{chapter*.62}
+\contentsline {chapter}{Index}{29}{section*.74}

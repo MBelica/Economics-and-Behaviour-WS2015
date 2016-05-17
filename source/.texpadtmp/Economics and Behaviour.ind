@@ -1,29 +1,33 @@
 \begin{theindex}
 
-  \item ambiguity, \hyperpage{5}
+  \item Anticipatory utility, \hyperpage{23}
 
   \indexspace
 
   \item Battle of sexes, \hyperpage{8}
-  \item Beauty-Contest, \hyperpage{9}
+  \item Beauty-Contest, \hyperpage{8}
+  \item best response, \hyperpage{7}
 
   \indexspace
 
-  \item complete information, \hyperpage{5}
+  \item complete plan, \hyperpage{6}
 
   \indexspace
 
-  \item Dictator-Game, \hyperpage{9}
-  \item dynamic game, \hyperpage{4}
+  \item decision nodes, \hyperpage{10}
+  \item Dictator-Game, \hyperpage{10}
 
   \indexspace
 
-  \item Experimental economics, \hyperpage{6}
+  \item economical experiments, \hyperpage{4}
+  \item equilibrium, \hyperpage{5}
+  \item exam information, \hyperpage{2}
+  \item extensive form, \hyperpage{10}
 
   \indexspace
 
-  \item game, \hyperpage{4}
-  \item Guessing-Game, \hyperpage{12}
+  \item game, \hyperpage{5}
+  \item Guessing-Game, \hyperpage{9}
 
   \indexspace
 
@@ -31,29 +35,44 @@
 
   \indexspace
 
-  \item incomplete information, \hyperpage{5}
+  \item initial node, \hyperpage{10}
+
+  \indexspace
+
+  \item matrix form, \hyperpage{6}
 
   \indexspace
 
   \item Nash-Equilibrium, \hyperpage{8}
-  \item normative, \hyperpage{5}
+  \item node, \hyperpage{10}
+  \item normative, \hyperpage{4}
 
   \indexspace
 
-  \item prescriptive, \hyperpage{5}
-  \item Prisoner's Dilemma, \hyperpage{7}
+  \item prescriptive, \hyperpage{4}
+  \item Prisoner's Dilemma, \hyperpage{6}
 
   \indexspace
 
-  \item set of strategies, \hyperpage{7}
-  \item static game, \hyperpage{4}
-  \item strategy profile, \hyperpage{8}
-  \item strictly dominated, \hyperpage{8}
-  \item sub-game, \hyperpage{10}
-  \item Sub-game-Perfect Nash-Equilibrium, \hyperpage{11}
+  \item rationalisable strategies, \hyperpage{7}
+  \item Rationality, \hyperpage{4}
 
   \indexspace
 
-  \item Ultimatum-Game, \hyperpage{9}
+  \item static games, \hyperpage{6}
+  \item strategic form, \hyperpage{6}
+  \item strategy, \hyperpage{6}
+  \item strictly dominant, \hyperpage{7}
+  \item subgame, \hyperpage{12}
+  \item subgame perfect Nash-Equilibrium, \hyperpage{12}
+
+  \indexspace
+
+  \item terminal nodes, \hyperpage{10}
+
+  \indexspace
+
+  \item Ultimatum-Game, \hyperpage{11}
+  \item Utility maximisation, \hyperpage{4}
 
 \end{theindex}
